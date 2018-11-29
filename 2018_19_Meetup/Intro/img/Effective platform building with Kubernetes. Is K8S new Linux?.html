@@ -1,0 +1,1013 @@
+<!DOCTYPE html>
+<html class=" js no-mobile desktop no-ie ff ff63 users-section wojciech.barczynski-section workspace-priv-section meetups-section talk_cloudnative_and_k8s_waw-section slides-section w-1852 gt-240 gt-320 gt-480 gt-640 gt-768 gt-800 gt-1024 gt-1280 gt-1440 gt-1680 lt-1920 no-portrait landscape gradient rgba opacity textshadow multiplebgs boxshadow borderimage borderradius no-cssreflections csstransforms csstransitions no-touch retina fontface domloaded" id="index-page"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Effective platform building with Kubernetes. Is K8S new Linux?</title>
+
+		<!-- bootstrap -->
+		<link rel="stylesheet" href="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/bootstrap.css">
+
+		<link rel="stylesheet" href="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/reveal.css">
+		<link rel="stylesheet" href="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script><link rel="stylesheet" type="text/css" href="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/paper.css">
+
+		<!-- remove annoying shadow around images -->
+		<style>
+			.reveal section img {
+				background-color:white;
+				border:0;
+				box-shadow: 0 0 0 0;
+			}
+		</style><script type="text/javascript" src="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/marked.js"></script><script type="text/javascript" src="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/markdown.js"></script><script type="text/javascript" src="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/notes.js"></script><script type="text/javascript" src="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/highlight.js"></script>
+	</head>
+	<body>
+		<div class="reveal slide center has-horizontal-slides ready" role="application" data-transition-speed="default" data-background-transition="fade">
+			<div class="slides" style="width: 960px; height: 700px; left: 50%; top: 50%; bottom: auto; right: auto; transform: translate(-50%, -50%) scale(1.48251);">
+				<section style="top: 350px; display: none;" class="past" aria-hidden="true" hidden="">
+					<h3>Effective platform building<br> with Kubernetes.</h3>
+
+					<!-- img src="img/logo_kubernetes.svg" class="center-block" style="background-color:white;border:0;width: 30%"/ -->
+					<!-- h3>Is K8S new Linux?</h3 -->
+					<br>
+					<small>Wojciech Barczynski - SMACC.io | Hypatos.ai<br>November 2018</small>
+				</section>
+
+				<!--
+				Simple semantic
+				Kubernetes Effective = Learn-as-you-go experience
+				Share my story
+				-->
+
+				<!-- section>
+					<h3>Today</h3>
+					<ul>
+						<li></li>
+						<li></li>
+						<li>Spent 3.5y with Openstack, 1000+ nodes, 21 data centers</li>
+	<li>I do not like INFRA :D</li>
+					</ul>
+				</section -->
+
+				<section style="top: 350px; display: none;" class="past" aria-hidden="true" hidden="">
+					<h3>Wojciech Barczyński</h3>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8">
+								<ul>
+									<li>Lead Software Developer<br>&amp; System Engineer</li>
+									<li>K8S:<br>2.5 years @ startups</li>
+									<li>Before:<br>Openstack, SAP R&amp;D</li>
+									<li>+Visiting lecturer and Trainer</li>
+								</ul>
+							</div>
+							<div class="col-md-3">
+								<img style="padding:12px" src="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/logo_smacc_hypatos.png">
+							</div>
+				</div></div></section>
+
+					<!-- li>I do not like INFRA</li-->
+
+				<!-- section>
+					<h3>Background</h3>
+					<ul>
+						<li>ML FinTech ➡ micro-services and k8s</li>
+						<li>Before:<br />1 z 10 Indonesian mobile e-commerce (Rocket Internet)</li>
+						<li>Spent 3.5y with Openstack, 1000+ nodes, 21 data centers</li>
+						<li>I do not like INFRA :D</li>
+					</ul>
+				</section -->
+
+				<!--
+					Tell me a story
+				-->
+				<section style="top: 350px; display: none;" class="past" aria-hidden="true" hidden="">
+					<h3>Story</h3><!-- Dude, why should I listen to you? -->
+						<ul>
+							<li>Lyke - [12.2016 - 07.2017]</li>
+							<li>SMACC - [10.2017 - present]</li>
+						</ul>
+				</section>
+
+				<!--
+					Intro
+				-->
+				<section style="top: 350px; display: none;" class="past" aria-hidden="true" hidden="">
+					<h4>Why we like kubernetes?</h4>
+					<img src="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/logo_kubernetes.svg" class="center-block" style="background-color:white;border:0;width: 30%">
+				</section>
+
+				<section style="top: 350px; display: none;" class="past" aria-hidden="true" hidden="">
+					<h3>&lt;3</h3>
+					<ul>
+						<li>Data center as a black box</li>
+						<li>(Simple) Lingua Franca for running services</li>
+						<li>Batteries included</li>
+						<li>Learn-as-you-go experience</li>
+						<li>Independent from IaaS provider</li>
+					</ul>
+					<p><small>Notice: not a silver bullet</small></p>
+				</section>
+
+				<!-- Data center as a black box</li> -->
+				<section style="top: 350px; display: none;" class="past" aria-hidden="true" hidden="">
+					<h3>Black Box</h3>
+					<p>Deploy!</p>
+					<img src="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/k8s_intro.svg" style="width:80%">
+					<p><small><code>make docker_push; kubectl create -f app-srv-dpl.yaml</code></small></p>
+				</section>
+
+				<section style="top: 350px; display: none;" class="past" aria-hidden="true" hidden="">
+					<h3>Black Box</h3>
+					<p>Scale up! Scale down!</p>
+					<img src="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/k8s_intro_scale_up.svg" style="width:80%">
+					<p><small><code>kubectl --replicas=3 -f app-srv-dpl.yaml</code></small></p>
+				</section>
+
+				<section style="top: 350px; display: none;" class="past" aria-hidden="true" hidden="">
+					<h3>Black Box</h3>
+					<p>Scale up! Scale down!</p>
+					<img src="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/k8s_intro_scale_down.svg" style="width:80%">
+					<p><small><code>kubectl --replicas=1 -f app-srv-dpl.yaml</code></small></p>
+				</section>
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" class="past" aria-hidden="true" hidden=""><h3 id="black-box">Black Box</h3>
+<p>Resistance and Migrations</p>
+
+<p><img src="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/k8s_ha_resistance_1.svg" style="width:80%"></p>
+<p><small><code></code></small></p>
+</section>
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" class="past" aria-hidden="true" hidden=""><h3 id="black-box">Black Box</h3>
+<p>Resistance and Migrations</p>
+
+<p><img src="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/k8s_ha_resistance_3.svg" style="width:80%"></p>
+<p><small><code></code></small></p>
+</section>
+
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" class="past" aria-hidden="true" hidden=""><h3 id="black-box">Black Box</h3>
+<p></p><p>Load Balancing</p>
+<img src="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/k8s_loadbalancing.svg" style="height:90%"><p></p>
+</section>
+
+				<section style="top: 350px; display: none;" class="past" aria-hidden="true" hidden="">
+					<h3>Lingua Franca</h3>
+					<img src="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/k8s_service_and_pods.svg" style="width:90%">
+				</section>
+
+				<section style="top: 350px; display: none;" class="past" aria-hidden="true" hidden="">
+					<h3>Lingua Franca</h3>
+					<img src="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/k8s_deployment_and_pods.svg" style="width:90%">
+				</section>
+
+				<!-- section>
+					<h3>Lingua Franca</h3>
+					<p>to talk about microservices:</p>
+					<img src="img/rubber_duck_sea.jpg" style="width:85%"/>
+				</section -->
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" class="past" aria-hidden="true" hidden=""><h3 id="ligua-franca">Ligua Franca</h3>
+<thread>
+        </thread><table>
+    <tbody><tr>
+            <th>Pattern</th><th>Target App Service</th>
+        </tr>
+    
+    </tbody><tbody>
+        <tr>
+            <td>api.smacc.io/v1/users</td><td>users-v1</td>
+        </tr>
+        <tr>
+            <td>api.smacc.io/v2/users</td><td>users-v2</td>
+        </tr>
+        <tr>
+            <td>smacc.io</td><td>web</td>
+        </tr>
+    </tbody>
+</table>
+</section>
+
+				<section style="top: 350px; display: none;" class="past" aria-hidden="true" hidden="">
+					<h3>Lingua Franca</h3>
+					<p>Ingress Controller:</p>
+					<img src="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/traefik_architecture.svg" width="80%">
+					<small>Drop-in: traefik, nginx, haproxy, envoy...</small>
+				</section>
+
+				<!--
+				## Why Kubernetes?
+
+				- Batteries for your (12factor) apps
+
+				WHY, HOW, WHAT
+
+				- Give you complete control over your application with simple *yaml* config files
+				- Use *labels* to auto-wire your app to monitoring, logging, and alarming
+				- Let you to, almost forget, about the infrastructure
+				-->
+
+
+				<!-- section>
+				<h4>Ostatnio</h4>
+				<ul>
+					<li>Platfroma integracyjne - patrz SAP</li>
+				</ul>
+				</section -->
+
+				<!-- section data-markdown>
+					<script type="text/template">
+						<h5>Data center as a Black box</h5>
+					</script>
+				</section -->
+				<!-- img src="img/kubernetes_logo.svg" style="background-color:white;width:60%" / -->
+
+												<!-- section data-markdown>
+													<script type="text/template">
+								## Rolling updates!
+
+								<img src="img/k8s_updates_rolling_1.svg" style="width:80%"/>
+								<small><code>kubectl set image deployment/app app=app:v2.0.0</code></small>
+													</script>
+												</section -->
+
+												<!-- section data-markdown>
+													<script type="text/template">
+								## Rolling updates!
+
+								<img src="img/k8s_updates_rolling_2.svg" style="width:80%"/>
+													</script>
+												</section -->
+
+												<!-- RollingUpdateStrategy -->
+												<!-- maxUnavailable -->
+												<!-- section data-markdown>
+													<script type="text/template">
+								## Rolling updates!
+
+								<img src="img/k8s_updates_rolling_3.svg" style="width:80%"/>
+													</script>
+												</section -->
+
+				<!--
+				<li>Batteries included</li>
+				-->
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" class="past" aria-hidden="true" hidden=""><h3 id="batteries">Batteries</h3>
+<p>Service Discovery:</p>
+<ul>
+<li>service injected to DNS: <br><code>curl <a href="http://users/list">http://users/list</a></code></li>
+<li>labels:<br><code>name=value</code></li>
+<li>annotations: <br><code>prometheus.io/scrape: "true"</code></li>
+</ul>
+</section>
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" class="past" aria-hidden="true" hidden=""><h3 id="service-discovery">Service Discovery</h3>
+<ul>
+<li>loosely couple components</li>
+<li>auto-wiring with logging and monitoring</li>
+<li>integration</li>
+</ul>
+</section>
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" class="past" aria-hidden="true" hidden=""><h3 id="drop-in">Drop-in</h3>
+<ul>
+<li>traefik / Ingress / Envoy</li>
+<li>prometheus</li>
+<li>audit checks</li>
+<li>...</li>
+</ul>
+</section>
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" class="past" aria-hidden="true" hidden=""><h3 id="l-span-style-text-transform-lowercase-earn-as-you-go-experience-span-">L<span style="text-transform: lowercase;">earn-as-you-go experience</span></h3>
+<p>Monitoring? Ingress?<br></p>
+<ol>
+<li>Drop-in: traefik, nginx, ...</li>
+<li>oooo ruuuuns!</li>
+<li>Make a hell of mistakes</li>
+<li>Get the right one or It is OK for now</li>
+</ol>
+</section>
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" class="past" aria-hidden="true" hidden=""><h3 id="l-span-style-text-transform-lowercase-earn-as-you-go-experience-span-">L<span style="text-transform: lowercase;">earn-as-you-go experience</span></h3>
+<p>Where to start?<br>
+➡ With service and deployment</p>
+</section>
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" class="past" aria-hidden="true" hidden=""><h3 id="l-span-style-text-transform-lowercase-earn-as-you-go-experience-span-">L<span style="text-transform: lowercase;">earn-as-you-go experience</span></h3>
+<p>memcached in k8s?<br>
+➡ statefulset</p>
+</section>
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" class="past" aria-hidden="true" hidden=""><h3 id="l-span-style-text-transform-lowercase-earn-as-you-go-experience-span-">L<span style="text-transform: lowercase;">earn-as-you-go experience</span></h3>
+<p>my pod takes all memory<br>
+➡ resource &amp; limits</p>
+</section>
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" class="past" aria-hidden="true" hidden=""><h3 id="l-span-style-text-transform-lowercase-earn-as-you-go-experience-span-">L<span style="text-transform: lowercase;">earn-as-you-go experience</span></h3>
+<p>my ML-based app has slow start<br>
+➡ probes</p>
+</section>
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" class="past" aria-hidden="true" hidden=""><h3 id="l-span-style-text-transform-lowercase-earn-as-you-go-experience-span-">L<span style="text-transform: lowercase;">earn-as-you-go experience</span></h3>
+<p>Zero-downtime deployment<br>
+➡ improve code + probes</p>
+</section>
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" class="past" aria-hidden="true" hidden=""><h3 id="long-live-git-">Long live git!</h3>
+<ul>
+<li>all yaml in your service git</li>
+<li>integration with monitoring, alarming, ...</li>
+<li>integration with ingress-controller</li>
+<li>we can forget about infrastructure... almosts</li>
+</ul>
+<p><small>DevOps Culture Dream!</small></p>
+</section>
+
+				<!--
+				Tell me a story
+				-->
+
+				<!--
+				LYKE
+				-->
+				<section style="top: 350px; display: none;" class="past" aria-hidden="true" hidden="">
+					<img src="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/lyke_logo.png">
+				</section>
+
+				<section style="top: 350px; display: none;" class="past" aria-hidden="true" hidden="">
+					<h2>Lyke</h2>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<ul>
+									<li>E-commerce</li>
+									<li>Mobile-only</li>
+									<li>50k+ users</li>
+									<li>2M downloads</li>
+									<li>Top 10 Fashion Apps<br>w Google Play Store</li>
+								</ul>
+							</div>
+							<div class="col-md-5">
+								<img src="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/lyke_user.jpg">
+								<small>http://www.news.getlyke.com/single-post/2016/12/02/Introducing-the-New-Beautiful-LYKE</small>
+							</div>
+						</div>
+						<p><small>Now JollyChic Indonesia</small></p>
+						<!--
+							https://e27.co/lyke-named-indonesian-pop-star-agnez-mo-co-founder-chief-creative-officer-20171026/
+						-->
+					</div>
+				</section>
+
+				<section style="top: 350px; display: none;" class="past" aria-hidden="true" hidden="">
+					<h2>Good parts</h2>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<ul>
+									<li>Fast Growth</li>
+									<li>A/B Testing</li>
+									<li>Data-driven</li>
+									<li>Product Manager,<br>UI Designer,<br>Mobile Dev,<br>and tester - one body</li>
+								</ul>
+							</div>
+							<div class="col-md-5">
+								<img src="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/lyke_image_search.png">
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" class="past" aria-hidden="true" hidden=""><h4 id="challenges">Challenges</h4>
+<ul>
+<li>50+ VMs in Amazon, 1 VM - 1 App, idle machine $$$</li>
+<li>Puppet with manual deployment process</li>
+<li>Fear</li>
+<li>Forgotten components</li>
+<li>Performance issues</li>
+</ul>
+</section>
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" class="past" aria-hidden="true" hidden=""><h4 id="approach">Approach</h4>
+<ol>
+<li>Simplify Infrastructure</li>
+<li>Change the Development Practices<br>
+(12factor + kubernetes)</li>
+<li>Change the Work Organization</li>
+</ol>
+<p><small>see: Conway's law</small></p>
+</section>
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" class="past" aria-hidden="true" hidden=""><h4 id="simplify">Simplify</h4>
+<ol>
+<li>Kubernetes with Google Kubernetes Engine</li>
+<li>Terraform for all new</li>
+</ol>
+</section>
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" class="past" aria-hidden="true" hidden=""><h4 id="simplify">Simplify</h4>
+<ol>
+<li>Prometheus, AlertManager, and Grafana</li>
+<li>Elasticsearch-Fluentd-Kibana</li>
+<li>Google Identity-Aware-Proxy<br>to protect all dev dashboards</li>
+<li>3rd party SaaS: statuscake and opsgenie</li>
+</ol>
+<p><small>One person efford</small></p>
+</section>
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: block;" class="past" aria-hidden="true" hidden=""><h4 id="continuous-deployment">Continuous Deployment</h4>
+<ul>
+<li>branch-based:<ul>
+<li>master</li>
+<li>staging</li>
+<li>production</li>
+</ul>
+</li>
+<li>repo independent</li>
+</ul>
+<p><small>Teach</small></p>
+</section>
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: block;" class="past" aria-hidden="true" hidden=""><h4 id="travisci">TravisCI</h4>
+<ol>
+<li>Tests</li>
+<li>Build docker</li>
+<li>Deploy to Google Container Registry</li>
+<li>Deploy to k8s only new docker</li>
+<li>no config applied</li>
+</ol>
+</section>
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 183px; display: block;" class="present"><h4 id="git-repo">Git Repo</h4>
+<pre><code class="hljs gherkin">|<span class="hljs-string">- tools
+</span>|<span class="hljs-string">    </span>|<span class="hljs-string">- kube-service.yaml
+</span>|<span class="hljs-string">    \- kube-deployment.yaml
+</span>|
+|<span class="hljs-string">- Dockerfile
+</span>|<span class="hljs-string">- VERSION
+\- Makefile</span></code></pre>
+</section>
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: block;" aria-hidden="true" class="future" hidden=""><h4 id="m-span-style-text-transform-lowercase-akefile-span-">M<span style="text-transform: lowercase;">akefile</span></h4>
+<pre><code class="hljs makefile">SERVICE_NAME=v-connector
+GCP_DOCKER_REGISTRY=eu.gcr.io
+<span class="hljs-section">test: test_short test_integration</span>
+
+<span class="hljs-section">run_local:</span>
+
+<span class="hljs-section">docker_build: docker_push</span>
+
+<span class="hljs-section">kube_create_config:</span>
+
+<span class="hljs-section">kube_apply:</span>
+
+<span class="hljs-section">kube_deploy:</span></code></pre>
+
+<p><small>Copy&amp;Paste from the project to project</small></p>
+</section>
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: block;" aria-hidden="true" class="future" hidden=""><h3 id="1-clean-up">1. Clean up</h3>
+<ul>
+<li>Single script for repo - Makefile [1]</li>
+<li>Resurrect the README</li>
+</ul>
+<p><small>[1] With zsh or bash auto-completion plug-in in your terminal.</small></p>
+</section>
+
+					<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" aria-hidden="true" class="future" hidden=""><h3 id="2-get-back-all-the-knowledge">2. Get back all the knowledge</h3>
+<ul>
+<li>Puppet, Chef, ... ➡ Dockerfile</li>
+<li>Check the instances ➡ Dockerfile, README.rst</li>
+<li>Nagios, ... ➡ README.rst, <code>checks/</code></li>
+</ul>
+</section>
+
+					<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" aria-hidden="true" class="future" hidden=""><h3 id="3-introduce-run_local">3. Introduce run_local</h3>
+<ul>
+<li><code>make run_local</code></li>
+<li>A nice section on how to run in README.rst</li>
+<li>Use: <code>docker-compose</code></li>
+</ul>
+<p>The most crucial point.</p>
+</section>
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" aria-hidden="true" class="future" hidden=""><h3 id="4-get-to-kubernetes">4. Get to kubernetes</h3>
+<ul>
+<li><code>make kube_create_config</code></li>
+<li><code>make kube_apply</code></li>
+<li>Generate the yaml files if your envs differ</li>
+</ul>
+</section>
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" aria-hidden="true" class="future" hidden=""><h3 id="5-continuous-deployment">5. Continuous Deployment</h3>
+<p>Travis:</p>
+<ul>
+<li>use the same Makefile as a developer</li>
+</ul>
+</section>
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" aria-hidden="true" class="future" hidden=""><h3 id="6-keep-it-running">6. Keep it running</h3>
+<p>Bridge the new with old:</p>
+<ul>
+<li>Use external services in Kubernetes</li>
+<li>Optional: Expose k8s in the Legacy [1]</li>
+</ul>
+<p><small>[1] feeding K8S events to HashiCorp consul</small></p>
+</section>
+
+
+				<section style="top: 350px; display: none;" aria-hidden="true" class="future" hidden="">
+					<h8>Bridge the new with old</h8>
+					<img src="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/lyke_new_with_old.svg" width="80%">
+					<p><small>Monitor legacy with new stack</small></p>
+				</section>
+
+				<section style="top: 350px; display: none;" aria-hidden="true" class="future" hidden="">
+					<h8>Architecture During Migration</h8>
+					<img src="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/lyke_immediately_architecture.svg" width="80%"><!-- br /-->
+					<!-- small>No dev?</small -->
+				</section>
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" aria-hidden="true" class="future" hidden=""><h3 id="7-introduce-smoke-test">7. Introduce smoke-test</h3>
+<pre><code class="bash hljs">    TARGET_URL=127.0.0 make smoke_test
+    TARGET_URL=api.example.com/users make smoke_test</code></pre>
+</section>
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" aria-hidden="true" class="future" hidden=""><h3 id="8-move-to-micro-services">8. Move to micro-services</h3>
+<p>To offload the biggest components:</p>
+<ul>
+<li>Keep the lights on</li>
+<li>New functionality delegated to micro-services</li>
+</ul>
+</section>
+
+								<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" aria-hidden="true" class="future" hidden=""><h3 id="9-service-self-consciousness">9. Service self-consciousness</h3>
+<p>Add to old services:</p>
+<ol>
+<li><i>metrics/</i></li>
+<li><i>health/</i></li>
+<li><i>info/</i></li><i>
+</i></ol><i>
+</i></section>
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" aria-hidden="true" class="future" hidden=""><h3 id="10-get-performance-testing">10. Get performance testing</h3>
+<ul>
+<li>introduce <i>wrk</i> for evaluating performance</li>
+<li>load test the real system</li>
+</ul>
+</section>
+
+<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" aria-hidden="true" class="future" hidden=""><h3 id="what-worked">What worked</h3>
+<ol>
+<li>C&amp;P Makefile and k8s between repos</li>
+<li>Separate deployments a good transition strategy</li>
+</ol>
+</section>
+
+<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" aria-hidden="true" class="future" hidden=""><h3 id="what-did-not-work">What did not work</h3>
+<ol>
+<li>Too many PoC, should cut them to 2 weeks max</li>
+<li>Do it with smaller chunks</li>
+<li>Alert rules too hard to write</li>
+<li>Push back to k8s yaml [*]</li>
+</ol>
+<p></p><p><small>With coaching, I thought, it is OK</small></p>
+</section>
+
+<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" aria-hidden="true" class="future" hidden=""><h3 id="do-different">Do different</h3>
+<ol>
+<li>Move dev and staging data immediately</li>
+<li>Let devs know it is a transition stage</li>
+<li>Teach earlier about resources</li>
+<li>EFK could wait</li>
+<li>World-stop for a paid-XXX% weekend for migration</li>
+</ol>
+</section>
+
+<!--
+SMACC
+-->
+<section style="top: 350px; display: none;" aria-hidden="true" class="future" hidden="">
+	<img src="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/logo_smacc_hypatos.png" width="50%">
+</section>
+
+<section data-background="img/smacc_pitch/smacc_pitch_1.png" data-background-repeat="" data-background-size="100%" style="top: 350px; display: none;" data-background-image="img/smacc_pitch/smacc_pitch_1.png" aria-hidden="true" class="future" hidden="">
+</section>
+
+<!-- section data-background="img/smacc_pitch/smacc_pitch_2.png" data-background-repeat="" data-background-size="100%">
+</section -->
+
+<section data-background="img/smacc_pitch/smacc_pitch_3.png" data-background-repeat="" data-background-size="100%" style="top: 350px; display: none;" data-background-image="img/smacc_pitch/smacc_pitch_3.png" aria-hidden="true" class="future" hidden="">
+</section>
+
+
+				<!-- section>
+					<h3>Background</h3>
+					<ul>
+				<li>Experience with AWS and GCP</li>
+				<li>I do not like INFRA :D</li>
+			</ul>
+		</section -->
+
+<!-- section>
+<h2>Kubernetes @ Azure</h2>
+</section -->
+
+<!-- section>
+	<h2>Options</h2>
+<ul>
+	<li>AKS - managed</li>
+	<li>ACS - installation wizard</li>
+	<li>Your own installation with Installer</li>
+</ul>
+</section -->
+
+<!-- section>
+	<h2>AKS</h2>
+<ul>
+	<li>GKE for Google</li>
+	<li>EKS or Fargate for Amazon</li>
+</ul>
+</section -->
+
+<section style="top: 350px; display: none;" aria-hidden="true" class="future" hidden="">
+	<h3>Story</h3>
+<ul>
+	<li>Legacy on AWS, experiments with AWS ECS :/ </li>
+	<li>Self-hosted K8S on ProfitBricks</li>
+	<li>Get to Microsoft ScaleUp, welcome Azure</li>
+	<li>Luckily - AKS</li>
+</ul>
+</section>
+
+<section style="top: 350px; display: none;" aria-hidden="true" class="future" hidden="">
+	<h3>Azure Kubernetes Service</h3>
+<ul>
+	<li>Independent from IaaS</li>
+	<li>Our OnPrem = Our OnCloud</li>
+	<li>Consolidation of our micro-services</li>
+	<li>Plug and play, e.g., monitoring</li>
+</ul>
+</section>
+
+<section style="top: 350px; display: none;" aria-hidden="true" class="future" hidden="">
+	<h3>Simplicity</h3>
+	<ul>
+		<li>az aks CLI for setting k8s - README.rst</li>
+		<li>Terraform for everything else</li>
+		<li>1Password and gopass.pw</li>
+	</ul>
+	<p><small>TF also sets our AWS</small></p>
+</section>
+
+<section style="top: 350px; display: none;" aria-hidden="true" class="future" hidden="">
+	<h3>Difference ☠</h3>
+	<ul>
+		<li>Two teams in Berlin and Warsaw</li>
+		<li>Me in Warsaw</li>
+	</ul>
+</section>
+
+<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" aria-hidden="true" class="future" hidden=""><h3 id="new-experience">New experience</h3>
+<ul>
+<li>devs really do not like TravisCI ... k8s yamls</li>
+<li>transition from PB to AKS was painful</li>
+</ul>
+</section>
+
+<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" aria-hidden="true" class="future" hidden=""><h3 id="solution">Solution</h3>
+<ul>
+<li>make everything ligther</li>
+<li>c&amp;p without modifications</li>
+<li>hide the k8s, remove magic</li>
+<li>deploy on <em>tag</em></li>
+</ul>
+<p><small>Similar to the <a href="https://www.youtube.com/watch?v=kOa_llowQ1c">Kelsey Hightower approach</a></small></p>
+</section>
+
+<section style="top: 350px; display: none;" aria-hidden="true" class="future" hidden="">
+<h3>R<span style="text-transform: lowercase;">epo .travis.yml</span></h3>
+
+<pre><code class="hljs yaml"><span class="hljs-attr">language:</span> <span class="hljs-string">go</span>
+<span class="hljs-attr">go:</span>
+<span class="hljs-bullet">-</span> <span class="hljs-string">'1.10'</span>
+<span class="hljs-attr">services:</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">docker</span>
+<span class="hljs-attr">install:</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">curl</span> <span class="hljs-bullet">-sL</span> <span class="hljs-attr">https://${GITHUB_TOKEN}@raw.githubusercontent.com/smaccio/smacc-ci/master/prerequisites.sh</span> <span class="hljs-string">| bash
+  - if [ -f "tools/travis/install.sh" ]; then bash tools/travis/install.sh; fi;
+</span><span class="hljs-attr">script:</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">dep</span> <span class="hljs-string">ensure</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">make</span> <span class="hljs-string">lint</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">make</span> <span class="hljs-string">test</span>
+<span class="hljs-bullet">  -</span> <span class="hljs-string">if</span> <span class="hljs-string">[</span> <span class="hljs-bullet">-z</span> <span class="hljs-string">"${TRAVIS_TAG}"</span> <span class="hljs-string">];</span> <span class="hljs-string">then</span> <span class="hljs-string">make</span> <span class="hljs-string">snapshot;</span> <span class="hljs-string">fi;</span>
+<span class="hljs-attr">deploy:</span>
+<span class="hljs-attr">  - provider:</span> <span class="hljs-string">script</span>
+<span class="hljs-attr">    script:</span> <span class="hljs-string">make</span> <span class="hljs-string">release</span> <span class="hljs-comment"># goreleaser</span>
+<span class="hljs-attr">    skip_cleanup:</span> <span class="hljs-literal">true</span> <span class="hljs-comment"># so we do not get rid of vendor/</span>
+<span class="hljs-attr">    on:</span>
+<span class="hljs-attr">      tags:</span> <span class="hljs-literal">true</span>
+<span class="hljs-attr">      all_branches:</span> <span class="hljs-literal">true</span>
+<span class="hljs-attr">      condition:</span> <span class="hljs-string">"$TRAVIS_TAG =~ ^v.*"</span>
+<span class="hljs-attr">  - provider:</span> <span class="hljs-string">script</span>
+<span class="hljs-attr">    script:</span> <span class="hljs-string">curl</span> <span class="hljs-bullet">-sL</span> <span class="hljs-attr">https://${GITHUB_TOKEN}@raw.githubusercontent.com/smaccio/smacc-ci/master/deploy.sh</span> <span class="hljs-string">| bash
+</span><span class="hljs-attr">    skip_cleanup:</span> <span class="hljs-literal">true</span>
+<span class="hljs-attr">    on:</span>
+<span class="hljs-attr">      tags:</span> <span class="hljs-literal">true</span>
+<span class="hljs-attr">      all_branches:</span> <span class="hljs-literal">true</span>
+<span class="hljs-attr">      condition:</span> <span class="hljs-string">"$TRAVIS_TAG =~ ^v.*"</span>
+<span class="hljs-attr">notifications:</span>
+<span class="hljs-attr">  slack:</span>
+<span class="hljs-attr">    rooms:</span>
+<span class="hljs-attr">    - smaccio:</span><span class="hljs-string">PLAIN_TEXT_HASH</span></code></pre>
+</section>
+
+<section style="top: 350px; display: none;" aria-hidden="true" class="future" hidden="">
+<h3>M<span style="text-transform: lowercase;">akefile</span></h3>
+
+<pre><code class="hljs gherkin">|<span class="hljs-string">- tools
+</span>|<span class="hljs-string">    </span>|<span class="hljs-string">- Makefile
+</span>|<span class="hljs-string">    </span>|<span class="hljs-string">- kube-service.yaml
+</span>|<span class="hljs-string">    \- kube-deployment.yaml
+</span>|
+|<span class="hljs-string">- Dockerfile
+\- Makefile</span></code></pre>
+</section>
+
+<section style="top: 350px; display: none;" aria-hidden="true" class="future" hidden="">
+<h2>Continuous Deployment</h2>
+<ul>
+	<li>Github</li>
+	<li>TravisCI</li>
+	<li>hub.docker.com</li>
+	<li>AKS</li>
+</ul>
+</section>
+
+<section style="top: 350px; display: none;" aria-hidden="true" class="future" hidden="">
+<h2>Process</h2>
+<ol>
+	<li><code>git tag</code> and push</li>
+</ol>
+</section>
+
+<section style="top: 350px; display: none;" aria-hidden="true" class="future" hidden="">
+<h2>Process</h2>
+<ol>
+	<li>Generate deploy, ingress, and svc kubernetes files</li>
+	<li>Commit to smacc-platform.git on <b>staging</b> branch</li>
+	<li>Deploy to staging environment</li>
+</ol>
+</section>
+
+<section style="top: 350px; display: none;" aria-hidden="true" class="future" hidden="">
+<h2>Process</h2>
+<ol>
+	<li>Create PR in smacc-platform.git for <b>production</b> branch</li>
+	<li>On merge, deploy to production</li>
+</ol>
+</section>
+
+<section style="top: 350px; display: none;" aria-hidden="true" class="future" hidden="">
+<h2><span style="text-transform: lowercase;">smacc-platform</span></h2>
+<ul>
+	<li>3 independent branches: dev, staging, and master</li>
+	<li>Target for other scripts</li>
+</ul>
+</section>
+
+<!-- section>
+	<h2>Tech</h2>
+	<ul>
+		<li>Golang dla mikroserwisów</li>
+		<li>Python dla wszystkiego Machine Learning</li>
+		<li>JS i Emberjs dla webui</li>
+		<li>OpenAPI</li>
+		<li>ML Pipeline - evaluate kubeflow i patchyderm</li>
+	</ul>
+</section -->
+
+<section style="top: 350px; display: none;" aria-hidden="true" class="future" hidden="">
+	<h2>Kubernetes</h2>
+	<ul>
+		<li>Pure, generated, kubernetes config</li>
+		<li>2x kubernetes operators</li>
+	</ul>
+</section>
+
+<!-- section>
+	<h2>Environments</h2>
+					<table>
+						<thread>
+							<tr>
+								<th>Env</th><th>Number of Nodes</th>
+							</tr>
+						</thread>
+						<tbody>
+							<tr>
+								<td>Prod</td><td>7</td>
+							</tr>
+							<tr>
+								<td>Staging</td><td>5</td>
+							</tr>
+							<tr>
+								<td>Dev</td><td>4</td>
+							</tr>
+							<tr>
+								<td>Tools</td><td>1</td>
+							</tr>
+						</tbody>
+					</table>
+<small>We also have short-living ML clusters</small>
+</section -->
+
+<!-- section>
+<h3>Databases</h3>
+<p>Inside the k8s</p>
+<ul>
+	<li>Mysql</li>
+	<li>Postgres</li>
+	<li>Mongodb</li>
+</ul>
+</section -->
+
+
+<section style="top: 350px; display: none;" aria-hidden="true" class="future" hidden="">
+<h2>What worked</h2>
+<ul>
+	<li>Hiding k8s</li>
+	<li>Go for ubuntu-based docker images</li>
+</ul>
+</section>
+
+<section style="top: 350px; display: none;" aria-hidden="true" class="future" hidden="">
+<h2>Would do different</h2>
+<ul>
+	<li>More sensitive to feedback</li>
+</ul>
+</section>
+
+<section style="top: 350px; display: none;" aria-hidden="true" class="future" hidden="">
+<h2>Next</h2>
+<ul>
+	<li>Acceptance tests on every deployment</li>
+	<li>Scale our ML trainings on the top of k8s</li>
+	<li>Deployment tool based on <a href="https://github.com/microdevs/missy">missy</a></li>
+	<li>Keeping an eye on Istio</li>
+</ul>
+</section>
+
+<section style="top: 350px; display: none;" aria-hidden="true" class="future" hidden="">
+<h2>K8S <span style="text-transform: lowercase;"> - </span> L<span style="text-transform: lowercase;">inux</span></h2>
+<ul>
+	<li>Kubernetes not a silver bullet, but damn close</li>
+	<li>Common runtime for onPrem and onCloud</li>
+	<li>The biggest asset - the API</li>
+	<li>With service discovery - an integration platform</li>
+	<li>With kubevirt - might replace your Openstack</li>
+</ul>
+</section>
+
+
+<!-- section>
+<h3>How to start</h3>
+<ul>
+	<li>minikube</li>
+	<li>GKE</li>
+</ul>
+</section -->
+
+<section data-background="img/smacc_header_IT_source.jpg" data-background-repeat="" data-background-size="100%" data-background-position="bottom" style="position: relative; top: 350px; display: none;" data-background-image="img/smacc_header_IT_source.jpg" aria-hidden="true" class="future" hidden="">
+				<h4>Dziękuję. Pytania?</h4>
+				<p>ps. We are hiring.</p><!-- Developers, Frontend, System Engineers -->
+			</section>
+
+				<!--
+					BACKUP SLIDES
+				-->
+			<section data-background="img/smacc_header_IT_source.jpg" data-background-repeat="" data-background-size="100%" data-background-position="bottom" style="position: relative; top: 350px; display: none;" data-background-image="img/smacc_header_IT_source.jpg" aria-hidden="true" class="future" hidden="">
+				<h2>Backup Slides</h2>
+			</section>
+
+			<section style="top: 350px; display: none;" aria-hidden="true" class="future" hidden="">
+			<h4>Hiring</h4>
+			<ul>
+				<li>Senior Polyglot Software Engineers</li>
+				<li>Experienced System Engineers</li>
+				<li>Front-end Engineers</li>
+				<li>1 Data-Driven Product Manager</li>
+			</ul>
+			<p><small>Apply: hello-warsaw@smacc.io,<br>Questions? wojciech.barczynski@smacc.io, <a href="https://www.facebook.com/wojciech.barczynski.161">FB</a> or <a href="https://www.linkedin.com/in/wojciechbarczynski/">LI</a></small></p>
+			<p><small>We will teach you Go if needed. No k8s or ML, we will take care of that.</small></p>
+			</section>
+
+			<section style="top: 350px; display: none;" aria-hidden="true" class="future" hidden="">
+				<h1>0.1 ➡ 1.0</h1>
+			</section>
+
+
+				<section data-markdown="" data-markdown-parsed="true" style="top: 350px; display: none;" aria-hidden="true" class="future" hidden=""><h3 id="change-the-work-organization">Change the work organization</h3>
+<ul>
+<li>From Scrum</li>
+<li>To Kanban</li>
+</ul>
+<p>For the next talk</p>
+</section>
+
+			<section style="top: 350px; display: none;" aria-hidden="true" class="future" hidden="">
+				<h1>Kubernetes Concepts</h1>
+			</section>
+
+
+		<section style="top: 350px; display: none;" aria-hidden="true" class="future" hidden="">
+	<h3>Pods</h3>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<ul>
+					<li>See each other on localhost</li>
+					<li>Live and die together</li>
+					<li>Can expose multiple ports</li>
+				</ul>
+			</div>
+			<div class="col-md-5">
+				<img src="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/k8s_pod.svg" style="width:90%">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section style="top: 350px; display: none;" aria-hidden="true" class="future" hidden="">
+	<h3>Side-cars</h3>
+	<img src="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/k8s_pod_2.svg" style="width:90%">
+</section>
+
+	<section style="top: 350px; display: none;" aria-hidden="true" class="future" hidden="">
+				<h4>Basic Concepts</h4>
+				<p></p><thread>
+						</thread><table>
+					<tbody><tr>
+							<th>Name</th><th>Purpose</th><th></th>
+						</tr>
+					
+					</tbody><tbody>
+						<tr>
+							<td>Service</td><td>Interface</td><td>Entry point (Service Name)</td>
+						</tr>
+						<tr>
+							<td>Deployment</td><td>Factory</td><td>How many pods, which pods</td>
+						</tr>
+						<tr>
+							<td>Pod</td><td>Implementation</td><td>1+ docker running</td>
+						</tr>
+					</tbody>
+				</table><p></p>
+			</section>
+
+					<section style="top: 350px; display: none;" aria-hidden="true" class="future" hidden="">
+						<h4>Rolling Release with Deployments</h4>
+						<img src="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/k8s_rolling_out_updates.svg" style="width:80%"><br>
+						<small>Also possible</small>
+					</section>
+		</div>
+	<div class="backgrounds"><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: block;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: block;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background present" style="display: block;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: block;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: block;" data-loaded="true"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="img/smacc_pitch/smacc_pitch_1.png100%nullnullnullnullnullnullnull" data-background-size="100%" style="display: none;"><div class="slide-background-content" style="background-size: 100% auto;"></div></div><div class="slide-background future" data-background-hash="img/smacc_pitch/smacc_pitch_3.png100%nullnullnullnullnullnullnull" data-background-size="100%" style="display: none;"><div class="slide-background-content" style="background-size: 100% auto;"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" data-background-hash="img/smacc_header_IT_source.jpg100%nullnullnullnullbottomnullnull" data-background-size="100%" style="display: none;"><div class="slide-background-content" style="background-size: 100% auto; background-position: center bottom;"></div></div><div class="slide-background future" data-background-hash="img/smacc_header_IT_source.jpg100%nullnullnullnullbottomnullnull" data-background-size="100%" style="display: none;"><div class="slide-background-content" style="background-size: 100% auto; background-position: center bottom;"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div></div><div class="progress" style="display: block;"><span style="width: 777.383px;"></span></div><aside class="controls" style="display: block;" data-controls-layout="bottom-right" data-controls-back-arrows="faded"><button class="navigate-left enabled" aria-label="previous slide"><div class="controls-arrow"></div></button><button class="navigate-right enabled" aria-label="next slide"><div class="controls-arrow"></div></button><button class="navigate-up" aria-label="above slide" disabled="disabled"><div class="controls-arrow"></div></button><button class="navigate-down" aria-label="below slide" disabled="disabled"><div class="controls-arrow"></div></button></aside><div class="slide-number" style="display: none;"></div><div class="speaker-notes" data-prevent-swipe="" tabindex="0"></div><div class="pause-overlay"><button class="resume-button">Resume presentation</button></div><div style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);" id="aria-status-div" aria-live="polite" aria-atomic="true">Git Repo
+|- tools
+|    |- kube-service.yaml
+|    \- kube-deployment.yaml
+|
+|- Dockerfile
+|- VERSION
+\- Makefile
+</div></div>
+
+		<script src="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/head.js"></script>
+		<script src="Effective%20platform%20building%20with%20Kubernetes.%20Is%20K8S%20new%20Linux%3F_files/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	
+
+</body></html>
