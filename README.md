@@ -4,9 +4,7 @@ You will find us at https://www.meetup.com/Golang-Warsaw
 
 ## Golang Warsaw #21
 
-[Meetup Announcement](https://www.meetup.com/Golang-Warsaw/events/256566020/):
-
-Soon :D
+[Meetup Announcement](https://www.meetup.com/Golang-Warsaw/events/256566020/). Looking for speakers :)
 
 ## Golang Warsaw #20
 
