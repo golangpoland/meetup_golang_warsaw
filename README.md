@@ -4,7 +4,15 @@ You will find us at https://www.meetup.com/Golang-Warsaw
 
 ## Golang Warsaw #21
 
-[Meetup Announcement](https://www.meetup.com/Golang-Warsaw/events/256566020/). Looking for speakers :)
+Talks:
+
+1. Why Golang looks like that - Tomasz Grodzki
+
+2. Serverless in Golang - Bartosz Bonisławski
+
+0. [Intro](/2018_21_Meetup/Intro/index.pdf) ([html/revealjs](/2018_21_Meetup/Intro))
+
+Meetup.com: [#21](https://www.meetup.com/Golang-Warsaw/events/256566020/)
 
 ## Golang Warsaw #20
 
