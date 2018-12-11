@@ -1,0 +1,525 @@
+
+\documentclass[9pt]{beamer}
+
+\usepackage[utf8]{inputenc}
+\usepackage{colortbl}
+\usepackage[english]{babel}
+
+\newcommand{\myblue} [1] {{\color{blue}#1}}
+\newcommand{\newauthor}[4]{
+  \parbox{0.26\textwidth}{
+    \texorpdfstring
+      {
+        \centering
+        #1 \\
+        \myblue{{\href{#2}{\texttt{#3}}}} \\
+        #4 \\
+      }
+      {#1}
+  }
+}
+
+
+
+% beamer template
+\beamertemplatetransparentcovereddynamic
+\usetheme{default}
+
+\hypersetup{%
+  pdftitle={Why Golang looks like that},%
+   pdfauthor={Tomasz Grodzki},%
+%
+}
+
+\title[Why Golang looks like that]{Why Golang looks like that}
+\author[Tomasz Grodzki]{
+ \parbox{0.26\textwidth}{
+	\texorpdfstring
+	  {
+		\centering
+ 		Tomasz Grodzki \\
+ 		Co-Founder \& Developer, AlphaSOC \\
+ 		\myblue{\href{mailto:tomasz@alphasoc.com}{\texttt{tomasz@alphasoc.com}}} \\
+ 		\myblue{\href{https://github.com/tg}{\texttt{https://github.com/tg}}} \\
+ 	  }
+	{Tomasz Grodzki}
+}
+ }
+
+\date{2018-12-10}
+
+\begin{document}
+
+\frame{\titlepage
+}
+
+\part<presentation>{Main Talk}
+
+\section[slides]{slides}
+
+\begin{frame}[fragile]
+\frametitle{Long time ago...}
+
+
+Java and C++ were used for writing servers (at least at Google).
+
+
+They requires too much bookkeeping and repetition.
+
+
+Some programmers moved towards more dynamic languages (Python).
+
+
+Efficiency and type safety at stake!
+
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Birth}
+
+
+Born out of frustration.
+
+
+Efficient compilation, efficient execution, or ease of programming?
+
+
+First sketches in September 2007 (Robert Griesemer, Rob Pike, Ken Thompson).
+
+
+Plenty of siblings (Rust, Elixir, Swift).
+
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Language goals}
+
+
+\begin{itemize}
+\item Easy: compiled, statically typed, but with a dynamic feel.
+\item Modern: support for networked and multicore computing.
+\item Fast: at most a few seconds to build a large executable on a single computer.
+\end{itemize}
+
+"Go was intended as a language for writing server programs that would be easy to maintain over time." (golang.org)
+
+
+"Clean procedural language designed for scalable cloud software." (Rob Pike)
+
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Code design principles}
+
+
+\begin{itemize}
+\item Reduce clutter and complexity.
+\item Everything is declared exactly once.
+\item Syntax is clean and light on keywords.
+\item No hierarchy: types just are, they don't have to announce their relationships.
+\item Orthogonality of concepts.
+\item Orthogonality of features.
+\end{itemize}
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Where are my features?}
+
+
+Go does not compete on features.
+
+
+As of Go 1, the language is fixed.
+
+
+Features add complexity and hurt readability.
+
+
+Simple features that interact in simple ways.
+
+
+Simple means readable and predictable.
+
+
+Simple means easy to maintain.
+
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Simplicity is complicated}
+
+
+Great talk by Rob Pike: "Simplicity is complicated". (I've borrowed a few slides.)
+
+
+Go is actually complex, but it \emph{feels} simple.
+
+
+Interacting elements must mesh seamlessly, without surprises.
+
+
+Requires a lot of design, implementation work, refinement.
+
+
+Simplicity is the art of hiding complexity.
+
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{A few simple things in Go}
+
+
+\begin{itemize}
+\item garbage collection
+\item goroutines
+\item constants
+\item interfaces
+\item packages
+\end{itemize}
+
+Each hides complexity behind a simple facade.
+
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{(Simple) Garbage collecting}
+
+
+Super simple to use:
+- no interface
+- not event mentioned in the spec
+
+
+Very difficult to implement well.
+
+
+Shouldn't affect language goals, e.g. compilation time.
+
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{(Simple) Concurrency}
+
+
+Start a routine with a \texttt{go} keyword:
+
+
+
+\begin{verbatim}
+go function(args...)
+
+\end{verbatim}
+
+
+Fire and forget.
+
+
+Zero management:
+
+
+\begin{itemize}
+\item no stack size
+\item no routine ID
+\item no return
+\end{itemize}
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{(Simple) Constants}
+
+
+Constants are just numbers.
+
+
+They don't have specific type.
+
+
+Integers and floating points have "infinite" precision.
+
+
+Can be used more freely than variables:
+
+
+
+\begin{verbatim}
+x := 2.0         // x is float64
+fmt.Println(2*x) // prints "4"
+
+y := 2.0 * time.Second // y is time.Duration (int64)
+fmt.Println(30 * y)    // prints "1m0s"
+
+z := 2.5 * time.Second // error: constant 2.5 truncated to integer
+
+\end{verbatim}
+
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{(Simple) Interfaces}
+
+
+Interface is just a set of methods. No data.
+
+
+
+\begin{verbatim}
+type Reader interface {
+    Read([]byte) (int, error)
+}
+
+\end{verbatim}
+
+
+Statically and dynamically checked:
+
+
+
+\begin{verbatim}
+var r Reader = os.Stdin       // statically checked
+var x interface{} = os.Stdin  // statically checked
+r = x.(Reader)                // dynamically checked
+
+\end{verbatim}
+
+
+More general than OOP.
+
+
+Implement Read/Write and take advantage of \myblue{\href{https://golang.org/pkg/io/}{\texttt{package io}}}.
+
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{(Simple) Packages}
+
+
+
+\begin{verbatim}
+package http
+...
+import "net/http"
+
+\end{verbatim}
+
+
+Two keywords – \texttt{package}, \texttt{import}.
+
+
+Took a long time to design.
+
+
+Affects program design, syntax, naming, building, linking, testing, ...
+
+
+Separation of package path from package name enabled \texttt{go} \texttt{get}.
+
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Syntax}
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Why is the syntax so weird?}
+
+
+Only declaration syntax is different (from C-like languages).
+
+
+Designed to be easy to analyze.
+
+
+Can be parsed without symbol table.
+
+
+Much easier to build tools.
+
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{C syntax}
+
+
+In C there is not special syntax for declarations.
+
+
+You write an expression involving the item being declared:
+
+
+
+\begin{verbatim}
+int x;
+int f(int a, int b);
+int (*fp)(int a, int b);
+
+\end{verbatim}
+
+
+If you write ``(*fp)(a, b)`` you'll call a function that returns int, hence \texttt{fp} is a pointer to a function.
+
+
+Gets complicated quite quickly:
+
+
+
+\begin{verbatim}
+int (*fp)(int (*f)(int x, int y), int b)
+
+\end{verbatim}
+
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Go syntax}
+
+
+Distinct type syntax in declaration.
+
+
+Similar to many languages outside of the C family.
+
+
+
+\begin{verbatim}
+x int
+p *int
+a [3]int
+
+\end{verbatim}
+
+
+Reads nicely from left to right.
+
+
+No direct correspondence between the look and use.
+
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Works well for functions functions functions}
+
+
+Simple example is similar to C:
+
+
+
+\begin{verbatim}
+func main(argc int, argv []string) int
+
+\end{verbatim}
+
+
+Reads well: function main takes an int and a slice of strings and returns an int.
+
+
+More complex declarations are also readable:
+
+
+
+\begin{verbatim}
+f func(func(int,int) int, int) int
+f func(func(int,int) int, int) func(int, int) int
+
+\end{verbatim}
+
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Who is weird now?}
+
+
+
+\begin{verbatim}
+f func(func(int,int) int, int) func(int, int) int
+
+\end{verbatim}
+
+
+vs
+
+
+
+\begin{verbatim}
+int (*(*fp)(int (*)(int, int), int))(int, int)
+
+\end{verbatim}
+
+
+Go's declarations read left to right.
+
+
+C's read in a spiral? See \myblue{\href{http://c-faq.com/decl/spiral.anderson.html}{\texttt{Clockwise/Spiral Rule.}}}
+
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Invisible semicolon}
+
+
+Semicolons are in the formal grammar.
+
+
+Good for parsers, not for people.
+
+
+Injected automatically, without lookahead.
+
+
+Lack of lookahead has some side effects:
+	- opening brace of a function cannot appear on a line by itself,
+	- fixed style,
+	- easier for tools and interactive implementation of Go.
+
+
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{References}
+
+
+\begin{itemize}
+\item \myblue{\href{https://www.youtube.com/watch?v=rFejpH\_tAHM}{\texttt{Rob Pike - Simplicity is complicated}}}
+\item \myblue{\href{https://golang.org/doc/faq}{\texttt{golang.org/doc/faq}}}
+\end{itemize}
+
+
+\end{frame}
+
+\end{document}

@@ -6,7 +6,7 @@ You will find us at https://www.meetup.com/Golang-Warsaw
 
 Talks:
 
-1. Why Golang looks like that - Tomasz Grodzki
+1. Why Golang looks like that ([golang slide](2018_21_Meetup/WhyGoLangLooksLikeThat/whygolanglookslikethat.slide), [pdf export](2018_21_Meetup/WhyGoLangLooksLikeThat/whygolanglookslikethat.pdf)) - Tomasz Grodzki
 
 2. Serverless in Golang - Bartosz Bonisławski
 
