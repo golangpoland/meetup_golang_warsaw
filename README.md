@@ -8,7 +8,7 @@ Talks:
 
 1. Why Golang looks like that ([golang slide](2018_21_Meetup/WhyGoLangLooksLikeThat/whygolanglookslikethat.slide), [pdf export](2018_21_Meetup/WhyGoLangLooksLikeThat/whygolanglookslikethat.pdf)) - Tomasz Grodzki
 
-2. Serverless in Golang - Bartosz Bonisławski
+2. Serverless in Golang, a live demo with [serverless](https://serverless.com/) and its [aws-go-dep](https://github.com/serverless/serverless/tree/master/lib/plugins/create/templates/aws-go-dep) for AWS Lambda - Bartosz Bonisławski
 
 0. [Intro](/2018_21_Meetup/Intro/index.pdf) ([html/revealjs](/2018_21_Meetup/Intro))
 
