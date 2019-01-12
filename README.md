@@ -2,6 +2,14 @@
 
 You will find us at https://www.meetup.com/Golang-Warsaw
 
+## Golang Warsaw Workshop #2
+
+Workshop:
+
+- Hands-on Kubernetes Introduction ([workshop manual and slides](https://github.com/wojciech12/workshop_kubernetes_and_cloudnative)) - Wojciech Barczynski
+
+Meetup.com: [Workshop#2](https://www.meetup.com/Golang-Warsaw/events/257401117/)
+
 ## Golang Warsaw #21
 
 Talks:
@@ -41,4 +49,3 @@ Talks:
 0. [Intro](/2018_19_Meetup/Intro/index.pdf) ([html/revealjs](/2018_19_Meetup/Intro))
 
 Meetup.com: [#19](https://www.meetup.com/Golang-Warsaw/events/254200354/)
-
