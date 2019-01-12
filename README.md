@@ -2,7 +2,7 @@
 
 You will find us at https://www.meetup.com/Golang-Warsaw
 
-## Golang Warsaw #22
+## Join us! Golang Warsaw #22 on 15 January 2019
 
 Meetup.com: [#22](https://www.meetup.com/Golang-Warsaw/events/257562446/)
 
