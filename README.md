@@ -2,7 +2,16 @@
 
 You will find us at https://www.meetup.com/Golang-Warsaw
 
-## Join us! Golang Warsaw #22 on 15 January 2019
+## Golang Warsaw #22
+
+Talks:
+
+1. Reflection in Go is not for you. Is it? ([slides](https://github.com/mmatczuk/talks/blob/master/reflection/reflection.slide), [code](https://github.com/mmatczuk/talks/blob/master/reflection)) - Michał Matczuk [ScyllaDB]
+
+2. Dependency Injection in action with google/wire, let’s Go! ([slides](https://github.com/grumpy-programmer/golang-warsaw-22/blob/master/docs/golang-warsaw-22.pdf
+), [src code](https://github.com/grumpy-programmer/golang-warsaw-22)) - Dominik Pruszyński [BlueSoft]
+
+3. [Go-fuzz or new unit testing](https://github.com/cristaloleg/talks/blob/master/2019/golang-warsaw-22/Go-fuzz.pdf) - Oleg Kovalov [[github:@cristaloleg](https://github.com/cristaloleg)]
 
 Meetup.com: [#22](https://www.meetup.com/Golang-Warsaw/events/257562446/)
 
@@ -30,7 +39,7 @@ Meetup.com: [#21](https://www.meetup.com/Golang-Warsaw/events/256566020/)
 
 Talks:
 
-1. [Golang Do and Don'ts](https://github.com/cristaloleg/talks/blob/master/2018/golang-warsaw-20/go-advices.pdf) - Oleg Kovalov
+1. [Golang Do and Don'ts](https://github.com/cristaloleg/talks/blob/master/2018/golang-warsaw-20/go-advices.pdf) - Oleg Kovalov [[github:@cristaloleg](https://github.com/cristaloleg)]
 
 2. The Raft Consensus Algorithm for Golang Devs ([slides](https://docs.google.com/presentation/d/1Pf2VijmKJlZ_IVq03m_YPG7hP8BWbbvU1pZuUFtfSFI), [src code](https://github.com/arsoba/raftdemo)) - Stanisław Arsoba
 
@@ -48,7 +57,7 @@ Talks:
 
 2. [Debugging Adventure: Slices strike back](https://talks.godoc.org/github.com/janisz/presentations/dude_golang/golang_warsaw_fall.slide#1) - Tomek Janiszewski
 
-3. [Go-critic](https://github.com/go-critic/go-critic) - Oleg Kovalov
+3. [Go-critic](https://github.com/go-critic/go-critic) - Oleg Kovalov [[github:@cristaloleg](https://github.com/cristaloleg)]
 
 0. [Intro](/2018_19_Meetup/Intro/index.pdf) ([html/revealjs](/2018_19_Meetup/Intro))
 
