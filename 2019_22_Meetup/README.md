@@ -2,9 +2,15 @@
 
 ### Summary
 
-Thank you all for attending #21 Golang Meetup Warsaw.
+Thank you all for attending #22 Golang Meetup Warsaw.
 
-We had 3 talks.  XYZ
+We had 3 talks.
+
+1. Reflection in Go is not for you. Is it?, Michał Matczuk [ScyllaDB]
+
+2. Dependency Injection in action with google/wire, let’s Go!, Dominik Pruszyński [BlueSoft]
+
+3. [Go-fuzz or new unit testing](https://github.com/cristaloleg/talks/blob/master/2019/golang-warsaw-22/Go-fuzz.pdf) - Oleg Kovalov [@cristaloleg](https://github.com/cristaloleg)
 
 You will find slides on [Github](https://github.com/golangpoland/meetup_golang_warsaw) and the photos on [Meetup.com](https://www.meetup.com/Golang-Warsaw/photos/29606369/477877820/).
 
