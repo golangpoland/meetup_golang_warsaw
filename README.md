@@ -2,6 +2,15 @@
 
 You will find us at https://www.meetup.com/Golang-Warsaw
 
+## Golang Warsaw #23
+
+Talks:
+
+
+0. [Intro](/2019_23_Meetup/Intro/index.pdf) ([html/revealjs](/2019_23_Meetup/Intro))
+
+Meetup.com: [#23](https://www.meetup.com/Golang-Warsaw/events/257705831/)
+
 ## Golang Warsaw #22
 
 Talks:
@@ -12,6 +21,8 @@ Talks:
 ), [src code](https://github.com/grumpy-programmer/golang-warsaw-22)) - Dominik Pruszyński [BlueSoft]
 
 3. [Go-fuzz or new unit testing](https://github.com/cristaloleg/talks/blob/master/2019/golang-warsaw-22/Go-fuzz.pdf) - Oleg Kovalov [[github:@cristaloleg](https://github.com/cristaloleg)]
+
+0. [Intro](/2019_22_Meetup/Intro/index.pdf) ([html/revealjs](/2019_22_Meetup/Intro))
 
 Meetup.com: [#22](https://www.meetup.com/Golang-Warsaw/events/257562446/)
 
