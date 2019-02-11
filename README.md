@@ -1,6 +1,18 @@
 # Golang Warsaw Meetup
 
-You will find us at https://www.meetup.com/Golang-Warsaw
+You will find us at https://www.meetup.com/Golang-Warsaw, but not only there, check [our contact us](/.organizers/contact_us.md).
+
+## Golang Warsaw #23
+
+Talks:
+
+1.  Reflection Dark Arts ([slides](https://docs.google.com/presentation/d/1OCwIPVffnKsFWuIW-jH2EpihQwODGH7ljsTSoSo14Qw/edit?usp=sharing), [slides pdf](/2019_22_Meetup/Reflection_Dark_Arts/Reflection_Dark_Arts.pdf)) - Rafał Jęczalik [ScyllaDB]
+
+2. How to monitor your Golang App with Prometheus ([slides](https://github.com/wojciech12/talk_monitoring_with_prometheus/tree/master/slides_go), [demo](https://github.com/wojciech12/talk_monitoring_with_prometheus)) - Wojciech Barczyński [Hypatos.ai]
+
+0. [Intro](/2019_23_Meetup/Intro/index.pdf) ([html/revealjs](/2019_23_Meetup/Intro))
+
+Meetup.com: [#23](https://www.meetup.com/Golang-Warsaw/events/257705831/)
 
 ## Golang Warsaw #22
 
@@ -12,6 +24,8 @@ Talks:
 ), [src code](https://github.com/grumpy-programmer/golang-warsaw-22)) - Dominik Pruszyński [BlueSoft]
 
 3. [Go-fuzz or new unit testing](https://github.com/cristaloleg/talks/blob/master/2019/golang-warsaw-22/Go-fuzz.pdf) - Oleg Kovalov [[github:@cristaloleg](https://github.com/cristaloleg)]
+
+0. [Intro](/2019_22_Meetup/Intro/index.pdf) ([html/revealjs](/2019_22_Meetup/Intro))
 
 Meetup.com: [#22](https://www.meetup.com/Golang-Warsaw/events/257562446/)
 

@@ -1,6 +1,6 @@
 ## Golang Warsaw #22
 
-### Summary WIP
+### Summary
 
 Thank you all for attending [#22 Golang Meetup Warsaw](https://www.meetup.com/Golang-Warsaw/events/257562446/).
 
