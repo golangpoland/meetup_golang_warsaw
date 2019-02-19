@@ -6,7 +6,7 @@ You will find us at https://www.meetup.com/Golang-Warsaw, but not only there, ch
 
 Talks:
 
-1.  Reflection Dark Arts ([slides](https://docs.google.com/presentation/d/1OCwIPVffnKsFWuIW-jH2EpihQwODGH7ljsTSoSo14Qw/edit?usp=sharing), [slides pdf](/2019_22_Meetup/Reflection_Dark_Arts/Reflection_Dark_Arts.pdf)) - Rafał Jęczalik [ScyllaDB]
+1.  Reflection Dark Arts ([slides](https://docs.google.com/presentation/d/1OCwIPVffnKsFWuIW-jH2EpihQwODGH7ljsTSoSo14Qw/edit?usp=sharing), [slides pdf](/2019_23_Meetup/Reflection_Dark_Arts/Reflection_Dark_Arts.pdf)) - Rafał Jęczalik [ScyllaDB]
 
 2. How to monitor your Golang App with Prometheus ([slides](https://github.com/wojciech12/talk_monitoring_with_prometheus/tree/master/slides_go), [demo](https://github.com/wojciech12/talk_monitoring_with_prometheus)) - Wojciech Barczyński [Hypatos.ai]
 
