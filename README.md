@@ -2,6 +2,10 @@
 
 You will find us at https://www.meetup.com/Golang-Warsaw, but not only there, check [our contact us](/.organizers/contact_us.md).
 
+## Golang Warsaw #24
+
+We see each other at *sharp* 18.00 on 13 March 2019 in https://przestrzen.fb.com.
+
 ## Golang Warsaw #23
 
 Talks:
