@@ -1,12 +1,21 @@
-# Golang Warsaw Meetup
+## Golang Warsaw Meetup
 
-You will find us at https://www.meetup.com/Golang-Warsaw, but not only there, check [our contact us](/.organizers/contact_us.md).
+You will find us at https://www.meetup.com/Golang-Warsaw, but not only there, check [our contact-us page](/.organizers/contact_us.md).
+
+<img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
+<small>Logo by <i>mlemkat</i></small>
 
 ## Golang Warsaw #24
 
-We see each other at *sharp* 18.00 on 13 March 2019 in https://przestrzen.fb.com.
+Talks:
 
-Meetup.com: [#24](https://www.meetup.com/Golang-Warsaw/events/259234625)
+1. What can we learn from pkg/io? ([slides](/2019_24_Meetup/pkg-io/)) [PL] - Tomasz Grodzki [AlphaSOC]
+
+2. Observability: Logging ([slides and demo](https://github.com/wojciech12/talk_observability_logging)) [PL] - Wojciech Barczyński [Hyaptos.ai]
+
+0. [Intro](/2019_24_Meetup/Intro/index.pdf) ([html/revealjs](/2019_24_Meetup/Intro))
+
+Meetup.com: [#24](https://www.meetup.com/Golang-Warsaw/events/259234625/)
 
 ## Golang Warsaw #23
 

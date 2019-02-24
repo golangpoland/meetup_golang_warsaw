@@ -1,0 +1,235 @@
+pkg/io
+
+13 Mar 2019
+
+Tomasz Grodzki
+Co-Founder & Developer, AlphaSOC
+tomasz@alphasoc.com
+
+# https://github.com/tg
+
+* Interfaces
+
+Consist of one method:
+
+	Reader
+	Writer
+	Closer
+	Seeker
+
+	ReaderAt
+	WriterAt
+
+	ByteReader
+	RuneReader
+
+	StringWriter
+	ByteWriter
+
+	ReaderFrom
+	WriterTo
+
+* Interfaces
+
+Composed of other interfaces:
+
+	ReadCloser
+	ReadSeeker
+	WriteCloser
+	WriteSeeker
+
+	ReadWriter
+	ReadWriteCloser
+	ReadWriteSeeker
+
+	ByteScanner
+	RuneScanner
+
+* Interfaces
+
+	type Reader interface {
+	        Read(p []byte) (n int, err error)
+	}
+
+	type Writer interface {
+	        Write(p []byte) (n int, err error)
+	}
+
+	type Closer interface {
+	        Close() error
+	}
+
+* Interfaces
+
+	type ReadCloser interface {
+	        Reader
+	        Closer
+	}
+
+	type WriteCloser interface {
+	        Writer
+	        Closer
+	}
+
+	type ReadWriteCloser interface {
+	        Reader
+	        Writer
+	        Closer
+	}
+
+* Interfaces
+
+	type ReaderFrom interface {
+	        ReadFrom(r Reader) (n int64, err error)
+	}
+
+	type WriterTo interface {
+	        WriteTo(w Writer) (n int64, err error)
+	}
+
+* Interfaces
+
+	type ReaderAt interface {
+	        ReadAt(p []byte, off int64) (n int, err error)
+	}
+
+	type WriterAt interface {
+	        WriteAt(p []byte, off int64) (n int, err error)
+	}
+
+* Interfaces
+
+Interfaces have rich documentation specifing the expected behaviour.
+
+A lot of corner cases.
+
+See: [[https://golang.org/pkg/io/#Reader][io.Reader]], [[https://golang.org/pkg/io/#Writer][io.Writer]]
+
+* Wrappers
+
+Reader
+
+    func LimitReader(r Reader, n int64) Reader
+    func MultiReader(readers ...Reader) Reader
+    func TeeReader(r Reader, w Writer) Reader
+
+Writer
+
+	func MultiWriter(writers ...Writer) Writer
+
+* Section reader
+
+SectionReader implements Read, Seek, and ReadAt on a section of an underlying ReaderAt.
+
+	type SectionReader
+	    func NewSectionReader(r ReaderAt, off int64, n int64) *SectionReader
+	    func (s *SectionReader) Read(p []byte) (n int, err error)
+	    func (s *SectionReader) ReadAt(p []byte, off int64) (n int, err error)
+	    func (s *SectionReader) Seek(offset int64, whence int) (int64, error)
+	    func (s *SectionReader) Size() int64
+
+* Functions
+
+Copy from source (Reader) to destination (Writer):
+
+	func Copy(dst Writer, src Reader) (written int64, err error)
+
+Same, but allocation can be avoided:
+
+	func CopyBuffer(dst Writer, src Reader, buf []byte) (written int64, err error)
+
+Copy n bytes:
+
+	func CopyN(dst Writer, src Reader, n int64) (written int64, err error)
+
+Uses `WriterTo` or `ReaderFrom` interfaces if possible.
+
+* Functions
+
+Read exactly `len(buf)` bytes:
+
+	func ReadFull(r Reader, buf []byte) (n int, err error)
+
+Read at least `min` (and at most `len(buf)`) bytes:
+
+	func ReadAtLeast(r Reader, buf []byte, min int) (n int, err error)
+
+* Functions
+
+Write `string` to Writer (accepting `[]byte`):
+
+	func WriteString(w Writer, s string) (n int, err error)
+
+Similar to executing:
+
+	w.Write([]bytes(s))
+
+but `WriteString` method will be used if implemented:
+
+	func WriteString(w Writer, s string) (n int, err error) {
+		if sw, ok := w.(StringWriter); ok {
+			return sw.WriteString(s)
+		}
+		return w.Write([]byte(s))
+	}
+
+* Pipes
+
+Pipe creates a synchronous in-memory pipe.
+
+Can be used to connect code expecting io.Reader with code expecting io.Writer.
+
+There is no internal buffering.
+
+It is safe to call Read and Write in parallel with each other or with Close.
+
+* Examples
+
+* Copy
+
+One-liner copying user input to standard output:
+
+	package main
+
+	import (
+		"io"
+		"os"
+	)
+
+	func main() {
+		io.Copy(os.Stdout, os.Stdin)
+	}
+
+* Copy (http)
+
+.play src/http_copy.go
+
+* Copy and print
+
+.play src/http_copy_multi.go
+
+Note: writing to os.Stdout from multiple routines is not thread-safe.
+
+* Copy and print
+
+.play src/http_copy_tee.go
+
+* Count bytes
+
+.play src/http_count_bytes.go /Counter/,/func_main/
+
+* Pipe
+
+.play src/pipe.go /main_begin/,/main_end/
+
+* Other packages
+
+- [[https://golang.org/pkg/io/ioutil/][io/ioutil]]
+- [[https://golang.org/pkg/testing/iotest/][testing/iotest]]
+
+* Summary
+
+- Prefer pre-defined io interfaces
+- Mix and match io types to achieve expected results
+- Understand the contract for each interface
+- Use `iotest` to test for some corner cases

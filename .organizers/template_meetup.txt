@@ -1,0 +1,70 @@
+Call for Talks Open!
+
+Submit your talk:
+
+▪ Slack: gophers.slack.com #poland-warsaw: @Jacek Seliga @michalg @Wojciech
+▪ Email: [organizers email]
+
+➡️AGENDA
+
+We start at 18:00. Please be already at 17:50 latest.
+
+18:00 - 18:30 Your Talk - Your Name - 30 min
+18:30 - 18:50 Break
+18:50 - 19:20 Your Talk - Your Name - 30 min
+19:20 - 19:40 Your Talk - Your Name - 20 min
+20:00 - 21:00 We move to XXX (TBD),
+4 minutes from the przestrzen.fb.com.
+
+Thanks to our sponsors - Hypatos.ai and ___ , we support you with beer and snacks.
+
+➡️TALKS
+
+1. Talk title, You [Optional company / twitter / ...]
+
+About you
+
+About talk
+
+2. Talk title, You [Optional company / twitter / ...]
+
+About you
+
+About talk
+
+🔥SPONSORS 🔥
+
+▪ Hypatos.ai (https://hypatos.ai)
+▪ ___ (looking for 1 sponsor)
+
+➡️ABOUT US
+
+Our goal is to share our software-development experience on any level from junior to senior. It is your stage. You can always start with 10 min talk. Let me know, whether we can support you.
+
+We want to keep being a community-driven meetup, no sales pitches and no we-are-hiring everywhere. So far, we are lucky to have sponsors who supports this vision.
+
+Our github with previous talks: https://github.com/golangpoland/meetup_golang_warsaw
+
+You will find us also on (linked on our github):
+
+▪ Twitter: https://twitter.com/golangwarsaw1
+▪ Slack: #poland gophers.slack.com
+▪ Discord: #golang devpolska.org
+▪ FB: https://www.facebook.com/groups/1278049882223829/
+▪ https://www.linkedin.com/company/golang-warsaw-meetup
+
+ps. The more source code the better in your talk :) It might be just few source files or --- the best --- a simple runnable project. We seek to encourage the community to go through your talk again, work with the code, and learn more on their own. We do not mind live demos :).
+
+pps. Share your slides and code. What is there for you? Fame, github stars, FB/LI likes, and feedback.
+
+➡️WORKSHOP
+
+Next: golang in Business Link Astoria. Next 2: kubernetes, Next 3: Golang Concurrency.
+
+We want to have a carrot not a stick, aka black lists, for the ones who do not come :D. My personal goal is 65 avg per meetup. So far: 40-55.
+
+➡️CONTACT
+
+Questions? XXX - [organizers email]
+
+Logo by Ashley Macnamara — Original Gopher logo by Rene French

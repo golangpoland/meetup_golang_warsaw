@@ -7,7 +7,6 @@
 
 - Meetup: [Golang-Warsaw](https://www.meetup.com/Golang-Warsaw/)
 - Talks: [golangpoland/meetup_golang_warsaw](https://github.com/golangpoland/meetup_golang_warsaw)
-- FB: [Golang Polang Group](https://www.facebook.com/groups/1278049882223829/)
 - LinkedIn: [Golang Warsaw Meetup](https://www.linkedin.com/company/golang-warsaw-meetup)
 - Twitter: [@golangwarsaw1](https://twitter.com/golangwarsaw1)
 - Slack: #poland-warsaw [gophers.slack.com](https://gophers.slack.com)

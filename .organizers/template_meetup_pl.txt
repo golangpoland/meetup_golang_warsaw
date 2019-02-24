@@ -1,0 +1,74 @@
+Szczegóły
+Szukamy speakerów! Jako eksperyment, następny meetup będzie [PL].
+
+🔥Submit your talk 🔥
+▪ Google Forms: https://goo.gl/forms/GWYxg4a3bY1fl4Es2
+▪ Slack: gophers.slack.com #poland-warsaw: @Jacek Seliga @michalg @Wojciech
+
+Uwaga: Tym razem spotykamy się w przestrzen.fb.com. Kapitalne miejsce.
+
+Szukasz pomysłu czy inspiracji, przygotowaliśmy listę przykładowych tematów: https://goo.gl/9XiULU
+
+➡️AGENDA
+
+Zaczynamy o 18:00, jednak prosimy o przybycie najpóźniej o 17:50.
+
+18:00 - 18:30 Tytuł - Ty - 30 min
+18:30 - 18:50 Sesja “Get-know-each-other”
+18:50 - 19:10 Tytuł - Ty - 20 min
+
+Dziękujemy sponsorom - Hypatos.ai , którzy zapewnili wam piwo i przekąski.
+
+➡️PRELEKCJE (WIP)
+
+1. Twój talk, Ty [Firma / twitter / ...]
+
+Krótko o tobie
+
+Prelekcja
+
+2. Twój talk, Ty [Firma / twitter / ...]
+
+Krótko o tobie
+
+Prelekcja
+
+➡️SPONSORZY
+
+▪ Hypatos.ai (https://hypatos.ai)
+▪ 🔥 ___ (szukamy jeszcze jednego sponsora!!!) 🔥
+
+➡️LINKI
+
+▪ Github: https://github.com/golangpoland/meetup_golang_warsaw
+▪ Twitter: https://twitter.com/golangwarsaw1
+▪ Slack: #poland-warsaw gophers.slack.com
+▪ FB: https://www.facebook.com/groups/1278049882223829/
+▪ LI: https://www.linkedin.com/company/golang-warsaw-meetup
+
+Logo by Ashley Macnamara — Original Gopher logo by Rene French
+
+➡️ O NAS
+
+Naszym celem jest dzielenie się wiedzą oraz doświadczeniem w zakresie programowania na każdym poziomie, od juniora do seniora. Scena należy do Ciebie! Zawsze możesz zacząć z 10 minutowym talkiem. Daj nam znać jeśli możemy Cię w jakikolwiek sposób pomóc.
+
+Chcemy, aby ten meetup należał do społeczności, cenimy sobie niezależność i wolność od agresywnej rekrutacji podczas naszych spotkań. Do tej pory udaje się nam znajdować sponsorów gotowych wspierać tą wizje.
+
+Nasza “strona główna” z listą poprzednich prelekcji i warsztatów jest github:
+https://github.com/golangpoland/meetup_golang_warsaw
+
+Znajdziesz nas także na:
+
+▪ Twitter: https://twitter.com/golangwarsaw1
+▪ Slack: #poland-warsaw gophers.slack.com
+▪ FB: https://www.facebook.com/groups/1278049882223829/
+▪ LI: https://www.linkedin.com/company/golang-warsaw-meetup
+
+ps. Im więcej kodu tym lepiej :) Może to być kilka plików źródłowych albo prosty projekt. Chcemy zachęcić społeczność do ponownego przejrzenia prelekcji oraz pracy z twoim kodem. Live Dema są mile widziane :)
+
+pps. Nie zapomnij podzielić się z nami swoją prezentacją i kodem źródłowym. Zyskasz na tym sławę, gwiazdki na githubie, lajki na FB/LI oraz feedback.
+
+➡️CONTACT
+
+▪ Slack: gophers.slack.com #poland-warsaw: @Jacek Seliga @michalg @Wojciech
+▪ Email: Wojciech Barczyński - wb at hypatos.ai
