@@ -1,7 +1,12 @@
 ### Submit your talk
 
-1. Reach us on our slack or meetup.com
-2. Email (to be changed): wb@hypatos.ai
+1. Google Forms: https://goo.gl/forms/GWYxg4a3bY1fl4Es2
+2. Reach us on our slack or meetup.com
+
+Questions?
+
+1. Slack: #poland-warsaw [gophers.slack.com](https://gophers.slack.com)
+2. Email: wb@hypatos.ai
 
 ### Golang Meetup Warsaw
 
