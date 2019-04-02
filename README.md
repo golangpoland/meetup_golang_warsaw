@@ -1,10 +1,25 @@
 ## Golang Warsaw Meetup
 
-You will find us at https://www.meetup.com/Golang-Warsaw, but not only there, check [our contact-us page](/.organizers/contact_us.md).
+You will find us at https://www.meetup.com/Golang-Warsaw, but [not only there ](/.organizers/contact_us.md).
+
+Want to be a speaker? Have an idea for building our community? Let us know! Check [our contact-us page](/.organizers/contact_us.md).
 
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Warsaw #25 (Apr 25, 2019)
+
+Talks:
+
+1. Przejdźmy na GO (z Pythona)! – studium przypadku ([slides](https://github.com/kaweue/talks/tree/master/python-to-go)) - Paweł Marchewka [CodiLime], [CodiLime Tech Talk](https://www.meetup.com/Poland-CodiLime-Tech-Talk/events/260666521/)
+
+2. Content is King. Let the world will find about us on cloud-native.pl! ([cloud-native.pl](http://cloud-native.pl), [PythonLinks.info](http://PythonLinks.info))<br/>Christopher Lozinski [cloud-native.pl/PythonLinks.info]
+
+3. Go-perftuner ([slides](https://speakerdeck.com/olegkovalov/go-perftuner)) - Oleg Kovalov [[github:@cristaloleg](https://github.com/cristaloleg)]
+
+0. [Intro](/2019_25_Meetup/Intro/index.pdf) ([html/revealjs](/2019_25_Meetup/Intro))
+
+Meetup.com: [#25](https://www.meetup.com/Golang-Warsaw/events/260282299/)
 
 ## Golang Warsaw Workshop #3 (Apr 9, 2019)
 
@@ -67,7 +82,7 @@ Talks:
 
 1. Why Golang looks like that ([golang slide](2018_21_Meetup/WhyGoLangLooksLikeThat/whygolanglookslikethat.slide), [pdf export](2018_21_Meetup/WhyGoLangLooksLikeThat/whygolanglookslikethat.pdf)) - Tomasz Grodzki
 
-2. Serverless in Golang, a live demo with [serverless](https://serverless.com/) and its [aws-go-dep](https://github.com/serverless/serverless/tree/master/lib/plugins/create/templates/aws-go-dep) for AWS Lambda - Bartosz Bonisławski
+2. Serverless in Golang, a live demo with [serverless](https://serverless.com/) and its [aws-go-dep](https://github.com/serverless/serverless/tree/master/lib/plugins/create/templates/aws-go-dep) for AWS Lambda<br />Bartosz Bonisławski [Hypatos.ai]
 
 0. [Intro](/2018_21_Meetup/Intro/index.pdf) ([html/revealjs](/2018_21_Meetup/Intro))
 

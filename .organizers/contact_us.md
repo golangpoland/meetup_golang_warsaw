@@ -1,27 +1,28 @@
 ### Submit your talk
 
-1. Google Forms: https://goo.gl/forms/GWYxg4a3bY1fl4Es2
-2. Reach us on our slack or meetup.com
+1. Google Forms: https://goo.gl/forms/GWYxg4a3bY1fl4Es2 (ideas for talks: [google docs](https://goo.gl/9XiULU))
+2. Reach us on our #poland-warsaw on [gophers.slack.com](https://gophers.slack.com) or [meetup.com](https://www.meetup.com/Golang-Warsaw/)
 
-Questions?
+## Questions?
 
-1. Slack: #poland-warsaw [gophers.slack.com](https://gophers.slack.com)
+1. Slack: #poland-warsaw on [gophers.slack.com](https://gophers.slack.com)
 2. Email: wb@hypatos.ai
 
-### Golang Meetup Warsaw
+### Where to find us?
 
 - Meetup: [Golang-Warsaw](https://www.meetup.com/Golang-Warsaw/)
 - Talks: [golangpoland/meetup_golang_warsaw](https://github.com/golangpoland/meetup_golang_warsaw)
 - LinkedIn: [Golang Warsaw Meetup](https://www.linkedin.com/company/golang-warsaw-meetup)
 - Twitter: [@golangwaw](https://twitter.com/golangwaw)
-- Slack: #poland-warsaw [gophers.slack.com](https://gophers.slack.com)
+- Slack: #poland-warsaw on [gophers.slack.com](https://gophers.slack.com)
+- FB: [Golang Poland Group](https://www.facebook.com/groups/1278049882223829/) 
 
 ### Reach Golang Community in Poland
 
 - slack: #poland [gophers.slack.com](https://gophers.slack.com)
 - slack: #golang [devspl.slack.com](https://devspl.slack.com)
 - discord: #golang [devpolska.org](https://devpolska.org)
-- FB: [Golang Polang Group](https://www.facebook.com/groups/1278049882223829/)
+- FB groups: [Golang Poland](https://www.facebook.com/groups/1278049882223829/) and [Golang Poland Jobs](https://www.facebook.com/groups/390362318197751/)
 
 ### Reach Golang Community
 
