@@ -5,6 +5,15 @@ You will find us at https://www.meetup.com/Golang-Warsaw, but not only there, ch
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+
+## Golang Warsaw Workshop #3
+
+Workshop:
+
+- Hands-on Golang Programming Workshop: Building REST service ([workshop manual](https://github.com/wojciech12/workshop_golang/tree/master/2_one_day_rest_service)) - Wojciech Barczynski
+
+Meetup.com: [Workshop#3](https://www.meetup.com/Golang-Warsaw/events/259418300/)
+
 ## Golang Warsaw #24
 
 Talks:
