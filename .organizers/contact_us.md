@@ -1,6 +1,6 @@
 ### Submit your talk
 
-1. Google Forms: https://goo.gl/forms/GWYxg4a3bY1fl4Es2
+1. Google Forms: https://goo.gl/forms/GWYxg4a3bY1fl4Es2 (Ideas for talks: [google docs](https://goo.gl/9XiULU))
 2. Reach us on our slack or meetup.com
 
 Questions?
