@@ -5,6 +5,13 @@ You will find us at https://www.meetup.com/Golang-Warsaw, but not only there, ch
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Warsaw #25
+
+Talks:
+
+0. [Intro](/2019_25_Meetup/Intro/index.pdf) ([html/revealjs](/2019_25_Meetup/Intro))
+
+Meetup.com: [#25](https://www.meetup.com/Golang-Warsaw/events/260282299/)
 
 ## Golang Warsaw Workshop #3
 
