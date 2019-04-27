@@ -6,7 +6,7 @@ You will find us at https://www.meetup.com/Golang-Warsaw, but not only there, ch
 <small>Logo by <i>mlemkat</i></small>
 
 
-## Golang Warsaw Workshop #3
+## Golang Warsaw Workshop #3 (Apr 9, 2019)
 
 Workshop:
 
@@ -14,7 +14,7 @@ Workshop:
 
 Meetup.com: [Workshop#3](https://www.meetup.com/Golang-Warsaw/events/259418300/)
 
-## Golang Warsaw #24
+## Golang Warsaw #24 (Mar 13, 2019)
 
 Talks:
 
@@ -26,7 +26,7 @@ Talks:
 
 Meetup.com: [#24](https://www.meetup.com/Golang-Warsaw/events/259234625/)
 
-## Golang Warsaw #23
+## Golang Warsaw #23 (Feb 13, 2019)
 
 Talks:
 
@@ -38,7 +38,7 @@ Talks:
 
 Meetup.com: [#23](https://www.meetup.com/Golang-Warsaw/events/257705831/)
 
-## Golang Warsaw #22
+## Golang Warsaw #22 (Jan 15, 2019)
 
 Talks:
 
@@ -53,7 +53,7 @@ Talks:
 
 Meetup.com: [#22](https://www.meetup.com/Golang-Warsaw/events/257562446/)
 
-## Golang Warsaw Workshop #2
+## Golang Warsaw Workshop #2 (Jan 8, 2019)
 
 Workshop:
 
@@ -61,7 +61,7 @@ Workshop:
 
 Meetup.com: [Workshop#2](https://www.meetup.com/Golang-Warsaw/events/257401117/)
 
-## Golang Warsaw #21
+## Golang Warsaw #21 (Dec 10, 2018)
 
 Talks:
 
@@ -73,7 +73,7 @@ Talks:
 
 Meetup.com: [#21](https://www.meetup.com/Golang-Warsaw/events/256566020/)
 
-## Golang Warsaw #20
+## Golang Warsaw #20 (Nov 7, 2018)
 
 Talks:
 
@@ -87,7 +87,7 @@ Talks:
 
 Meetup.com: [#20](https://www.meetup.com/Golang-Warsaw/events/255260613/)
 
-## Golang Warsaw #19
+## Golang Warsaw #19 (Sep 25, 2018)
 
 Talks:
 
