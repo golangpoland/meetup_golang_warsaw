@@ -10,8 +10,11 @@ You will find us at https://www.meetup.com/Golang-Warsaw, but not only there, ch
 Talks:
 
 1. Przejdźmy na GO (z Pythona)! – studium przypadku - Katarzyna Rybacka, Paweł Marchewka [Codilime]
-2. Content is King! Let the world will find about us on cloud-native.pl ([cloud-native.pl](http://cloud-native.pl) [PythonLinks.info](http://PythonLinks.info)) - Christopher Lozinski, [cloud-native.pl / PythonLinks.info]
-3. Go-perftuner [slides](https://github.com/cristaloleg/talks/tree/master/2019/golang-warsaw-25) - Oleg Kovalov [[github:@cristaloleg](https://github.com/cristaloleg)]
+
+2. Content is King! Let the world will find about us on cloud-native.pl ([cloud-native.pl](http://cloud-native.pl), [PythonLinks.info](http://PythonLinks.info)) - Christopher Lozinski, [cloud-native.pl / PythonLinks.info]
+
+3. Go-perftuner ([slides](https://github.com/cristaloleg/talks/tree/master/2019/golang-warsaw-25)) - Oleg Kovalov [[github:@cristaloleg](https://github.com/cristaloleg)]
+
 0. [Intro](/2019_25_Meetup/Intro/index.pdf) ([html/revealjs](/2019_25_Meetup/Intro))
 
 Meetup.com: [#25](https://www.meetup.com/Golang-Warsaw/events/260282299/)
