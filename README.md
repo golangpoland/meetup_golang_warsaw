@@ -11,7 +11,7 @@ Talks:
 
 1. Przejdźmy na GO (z Pythona)! – studium przypadku - Katarzyna Rybacka, Paweł Marchewka [Codilime]
 
-2. Content is King! Let the world will find about us on cloud-native.pl ([cloud-native.pl](http://cloud-native.pl), [PythonLinks.info](http://PythonLinks.info))<br/>Christopher Lozinski, [cloud-native.pl / PythonLinks.info]
+2. Content is King! Let the world will find about us on cloud-native.pl. ([cloud-native.pl](http://cloud-native.pl), [PythonLinks.info](http://PythonLinks.info))<br/>Christopher Lozinski [cloud-native.pl / PythonLinks.info]
 
 3. Go-perftuner ([slides](https://github.com/cristaloleg/talks/tree/master/2019/golang-warsaw-25)) - Oleg Kovalov [[github:@cristaloleg](https://github.com/cristaloleg)]
 
