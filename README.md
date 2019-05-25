@@ -7,6 +7,18 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Warsaw #26 (May 22, 2019)
+
+Talks:
+
+1. [Tailor-made errors](https://gitlab.com/jakubdal/tailor-made-errors) - Jakub Daliga [ByteDance]
+
+2. [Strings in Go, Lighting](https://github.com/areknoster/strings-golang-warsaw-26) - Arek Noster [[github:@areknoster](https://github.com/areknoster)]
+
+3. [Go modules](https://speakerdeck.com/olegkovalov/go-modules) - Oleg Kovalov [[github:@cristaloleg](https://github.com/cristaloleg)]
+
+Meetup.com: [#26](https://www.meetup.com/Golang-Warsaw/events/261442277/)
+
 ## Golang Warsaw #25 (Apr 25, 2019)
 
 Talks:
