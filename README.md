@@ -7,6 +7,19 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Warsaw #27 (July 16, 2019)
+
+Talks:
+
+1. [Go packages](https://speakerdeck.com/olegkovalov/go-packages) - Oleg Kovalov [[github:@cristaloleg](https://github.com/cristaloleg)]
+
+2. [Golang. What did it teach me? And what was next](https://github.com/wojciech12/talk_gophercon_keynote_story_golang_dev_to_lead/tree/talk_golang_warsaw_27) - shorter version of his [GopherCon 2019 talk](https://gophercon.pl/)<br />Wojciech Barczynski [[github:@wojciech12](https://github.com/wojciech12)]
+
+3. Fishbowl discussion on Software Development best practices.<br />We covered: what-I-wish-to-know-before, code reviews and feedback, working in a remote team, and estimations.
+
+Meetup.com: [#27](https://www.meetup.com/Golang-Warsaw/events/262749526/)
+
+
 ## Golang Warsaw #26 (May 22, 2019)
 
 Talks:
