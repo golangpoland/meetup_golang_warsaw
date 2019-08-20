@@ -7,6 +7,10 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Warsaw #28 (August 27, 2019)
+
+Meetup.com: [#28](https://www.meetup.com/Golang-Warsaw/events/263969597/)
+
 ## Golang Warsaw #27 (July 16, 2019)
 
 Talks:
@@ -18,7 +22,6 @@ Talks:
 3. Fishbowl discussion on Software Development best practices.<br />We covered: what-I-wish-to-know-before, code reviews and feedback, working in a remote team, and estimations.
 
 Meetup.com: [#27](https://www.meetup.com/Golang-Warsaw/events/262749526/)
-
 
 ## Golang Warsaw #26 (May 22, 2019)
 
