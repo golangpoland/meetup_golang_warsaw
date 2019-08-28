@@ -12,7 +12,7 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 Talks:
 
 1. [SSH like a boss ](https://github.com/mmatczuk/talks/tree/master/ssh) - Michał Matczuk [ScyllaDB]
-2. [Golang and IoT](/2019_28_Meetup/Golang_and_IoT_Stas_Arsoba.pdf) - Stanislav Arsoba
+2. [Golang and IoT](/2019_28_Meetup/Golang_and_IoT_Stas_Arsoba.pdf) - Stanislav Arsoba [Itransition]
 0. [Intro](/2019_28_Meetup/Intro/index.pdf) ([html/revealjs](/2019_28_Meetup/Intro))
 
 Meetup.com: [#28](https://www.meetup.com/Golang-Warsaw/events/263969597/)
