@@ -7,6 +7,20 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+
+## Golang Warsaw #29 (September 25, 2019)
+
+Talks:
+
+1. [Testing http handlers in a verbose way - join open source project](https://docs.google.com/presentation/d/1HI52xUEzSTGmAlm7BB1xW6wEFFYJQPAR9mIDPDsh94c/present) - Krzysztof Madejski [[gitlab.com/gotests/handlertest](https://gitlab.com/gotests/handlertest/blob/master/README.md)]
+
+2. Fishbowl Golang Conversation v2
+
+0. [Intro](/2019_29_Meetup/Intro/index.pdf) ([html/revealjs](/2019_29_Meetup/Intro))
+
+Meetup.com: [#29](https://www.meetup.com/Golang-Warsaw/events/264719650/)
+
+
 ## Golang Warsaw #28 (August 27, 2019)
 
 Talks:
