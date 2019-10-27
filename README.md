@@ -7,8 +7,19 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Warsaw #30 (Oct 28, 2019)
 
-## Golang Warsaw #29 (September 25, 2019)
+Talks:
+
+1. [How to start with Kubernetes go-client](https://github.com/wojciech12/talk_kubernetes_client_go) ([pdf](https://github.com/wojciech12/talk_kubernetes_client_go/blob/master/slides/index.pdf)) - Wojciech Barczyński [Hypatos.ai]
+
+2. [How we develop in Golang, release, and test kubectl who-can plugin](/2019_30_Meetup/Develop_and_release_kubectl_who-can_plugin.pdf) ([pptx](/2019_30_Meetup/Develop_and_release_kubectl_who-can_plugin.pptx)) - Daniel Pacak [Aqua Security]
+
+0. [Intro](/2019_30_Meetup/Intro/index.pdf) ([html/revealjs](/2019_30_Meetup/Intro))
+
+Meetup.com: [#30](https://www.meetup.com/Golang-Warsaw/events/265791707/)
+
+## Golang Warsaw #29 (Sep 25, 2019)
 
 Talks:
 
@@ -20,8 +31,7 @@ Talks:
 
 Meetup.com: [#29](https://www.meetup.com/Golang-Warsaw/events/264719650/)
 
-
-## Golang Warsaw #28 (August 27, 2019)
+## Golang Warsaw #28 (Aug 27, 2019)
 
 Talks:
 
