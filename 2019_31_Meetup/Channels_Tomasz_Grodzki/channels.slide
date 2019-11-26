@@ -1,0 +1,210 @@
+Konichiwa Golang chan
+|| make(chan GreatAgain)
+
+Golang Warsaw #31
+27 Nov 2019
+
+Tomasz Grodzki
+Co-Founder & Developer, AlphaSOC
+tomasz@alphasoc.com
+
+# https://github.com/tg
+
+* Channel type
+
+[[https://golang.org/ref/spec#Channel_types][golang.org/ref/spec]] says:
+
+A channel provides a mechanism for concurrently executing functions to communicate by sending and receiving values of a specified element type.
+
+Channels act as first-in-first-out queues (FIFO) – the values are received in the order sent.
+
+* Channel type
+
+Channels can be directional or bidirectional:
+
+	chan T          // can be used to send and receive values of type T
+	chan<- float64  // can only be used to send float64s
+	<-chan int      // can only be used to receive ints
+
+A (bidirectional) channel may be constrained only to send or only to receive:
+
+	c := make(chan int)
+	var r <-chan int = c
+	var s chan<- int = c
+
+* Channel type
+
+A new, initialized channel value can be made using the built-in function make.
+Arguments: channel type and capacity (optional).
+
+	make(chan int) // same as make(chan int, 0)
+	make(chan int, 100)
+
+The capacity, in number of elements, sets the size of the buffer in the channel.
+
+If the capacity is zero (or absent), the channel is unbuffered.
+
+Otherwise, the channel is buffered.
+
+* Channel type
+
+For *unbuffered* channel communication succeeds only when both a sender and receiver are ready. 
+
+For *buffered* channel communication succeeds without blocking if the buffer is not full (sends) or not empty (receives).
+
+* Channel type
+
+A single channel may be used by any number of goroutines without further synchronization in:
+
+- send statements
+- receive operations
+- calls to the built-in functions: `cap` and `len`
+
+(Note that `close` is not on the list.)
+
+* send
+
+	ch <- 3  // send value 3 to channel ch
+
+- expressions are evaluated before communication begins
+- blocks until send can proceed
+- can proceed if there is room in the buffer or a receiver is ready (unbuffered)
+- send on closed channel == panic
+- send on nil channel blocks forever
+
+* receive
+
+	v := <-ch
+	v, ok := <-ch // ok == true if channel not closed
+
+- blocks until a value is available
+- receiving from a nil channel blocks forever
+- receiving from closed channel returns type's zero value and false
+
+* cap/len
+
+.play -edit src/caplen.go
+
+* close
+
+Close indicates no more values will be sent on the channel.
+
+Closing an already closed channel causes a panic.
+
+.play src/close.go /main_begin/,/main_end/
+
+* for-range
+
+A "for" statement with a "range" clause iterates through all entries of an array, slice, string or map, or *values*received*on*a*channel.*
+
+.play -edit src/for-range.go /main_begin/,/main_end/
+
+* Give me some REAL code!
+
+* Prime (number) counter
+
+* Prime counter
+
+Our program will count prime numbers <= N.
+
+One routine sending possible candidates.
+
+Multiple routines checking if candidates are prime.
+
+One routine collecting results.
+
+Two channels:
+
+- incoming jobs (possible candidates)
+- results from workers
+
+	#                                    / isPrime? \
+	#                    candidates ===> - isPrime? - ===> results
+	#                                    \ isPrime? /
+
+* Prime counter
+
+.code src/prime.go /package_begin/,/package_end/
+
+* Prime counter
+
+Send candidates:
+
+.play -edit src/prime.go /jobs_begin/,/jobs_end/
+
+* Prime counter
+
+Check candidates:
+
+.play -edit src/prime.go /workers_begin/,/workers_end/
+
+* Prime counter
+
+Finish up:
+
+.play src/prime.go /results_begin/,/results_end/
+
+* Showing primes
+
+* Showing primes
+
+Unknown number of results, different closing strategy.
+
+.code src/prime2.go /workers_begin/,/workers_end/
+
+* Showing primes
+
+Now we can loop over the results:
+
+.play src/prime2.go /results_begin/,/results_end/
+
+* Semaphore
+
+* Semaphore
+
+.play -edit src/semaphore.go /main_begin/,/main_end/
+
+* Semaphore (non-blocking)
+
+.code src/semaphore2.go /semaphore_begin/,/semaphore_end/
+
+* Semaphore (non-blocking)
+
+.play src/semaphore2.go /workers_begin/,/workers_end/
+
+* Real semaphore
+
+[[https://godoc.org/golang.org/x/sync/semaphore]]
+
+* Scheduler
+
+* Scheduler
+
+Send tasks into the channel.
+
+Receive tasks from the channel according to some priority.
+
+Priority queue instead of simple FIFO.
+
+Two channels: incoming and outgoing.
+
+	#
+	#                       tasks ===> scheduler ===> tasks (reordered)
+	#
+
+* Scheduler
+
+.play -edit src/scheduler.go /main_begin/,/main_end/
+
+* Scheduler
+
+.code src/scheduler.go /queue_begin/,/queue_end/
+
+* Scheduler
+
+.play -edit src/scheduler.go /scheduler_begin/,/scheduler_end/
+
+* Homework
+
+- broadcasting (one-to-many)
+- asynchronous function calls

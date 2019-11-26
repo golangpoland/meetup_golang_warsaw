@@ -7,6 +7,18 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Warsaw #31 (Nov 27, 2019) #GoTurns10
+
+Talks:
+
+1.  [Konichiwa Golang Chan](/2019_31_Meetup/Channels_Tomasz_Grodzki) - Tomasz Grodzki [[AlphaSOC](https://alphasoc.com/)]
+
+2. [Tales from Event Sourcing Pastures](https://flowdev.github.io/static/present/event-sourcing/Tales_from_Event_Sourcing_Pastures.html#1) ([src](https://github.com/flowdev/present-event-sourcing)) - Ole Bulbuk [co-organizer [Berlin Golang Meetup](https://www.meetup.com/golang-users-berlin/)]
+
+0. [Intro](/2019_31_Meetup/Intro_GoTurn10/index.pdf) ([html/revealjs](/2019_31_Meetup/Intro_GoTurn10))
+
+Meetup.com: [#31](https://www.meetup.com/Golang-Warsaw/events/266338843/)
+
 ## Golang Warsaw #30 (Oct 28, 2019)
 
 Talks:
