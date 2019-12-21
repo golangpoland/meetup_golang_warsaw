@@ -13,7 +13,7 @@ Talks:
 
 1.  [Konichiwa Golang Chan](/2019_31_Meetup/Channels_Tomasz_Grodzki) - Tomasz Grodzki [[AlphaSOC](https://alphasoc.com/)]
 
-2. [Tales from Event Sourcing Pastures](https://flowdev.github.io/static/present/event-sourcing/Tales_from_Event_Sourcing_Pastures.html#1) ([src](https://github.com/flowdev/present-event-sourcing)) - Ole Bulbuk [co-organizer [Berlin Golang Meetup](https://www.meetup.com/golang-users-berlin/)]
+2. [Tales from Event Sourcing Pastures](https://flowdev.github.io/static/present/2019/event-sourcing/present.html) ([src](https://github.com/flowdev/present-event-sourcing)) - Ole Bulbuk [co-organizer [Berlin Golang Meetup](https://www.meetup.com/golang-users-berlin/)]
 
 0. [Intro](/2019_31_Meetup/Intro_GoTurn10/index.pdf) ([html/revealjs](/2019_31_Meetup/Intro_GoTurn10))
 
