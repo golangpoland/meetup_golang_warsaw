@@ -7,6 +7,18 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Warsaw #32 (Jan 1, 2020)
+
+Talks:
+
+1.  [A **bit** faster logging](/2020_32_Meetup/a-bit-faster-logging-hacking-logging-on-GKE.pdf) -  Paweł Pierścionek [Cludo]
+
+2. [Accessing Custom Kubernetes Resources from Golang](https://github.com/danielpacak/k8s-security-crds/blob/master/docs/index.pdf) [[live-coding source code](https://github.com/danielpacak/k8s-security-crds)] - Daniel Pacak [Aqua Security]
+
+0. [Intro](/2020_32_Meetup/intro.pdf) ([pptx](/2020_32_Meetup/intro.pptx))
+
+Meetup.com: [#32](https://www.meetup.com/Golang-Warsaw/events/267210686/) ([LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:6620012814612381696))
+
 ## Golang Warsaw #31 (Nov 27, 2019) #GoTurns10
 
 Talks:

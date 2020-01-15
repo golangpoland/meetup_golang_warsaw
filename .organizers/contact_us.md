@@ -1,7 +1,8 @@
 ### Submit your talk
 
-1. Google Forms: https://goo.gl/forms/GWYxg4a3bY1fl4Es2 (ideas for talks: [google docs](https://goo.gl/9XiULU))
-2. Reach us on our #poland-warsaw on [gophers.slack.com](https://gophers.slack.com) or [meetup.com](https://www.meetup.com/Golang-Warsaw/)
+Reach us on the #poland-warsaw on [gophers.slack.com](https://gophers.slack.com) or [meetup.com](https://www.meetup.com/Golang-Warsaw/).
+
+Ideas for talks: [google docs](https://goo.gl/9XiULU))
 
 ## Questions?
 
