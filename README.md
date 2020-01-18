@@ -162,11 +162,11 @@ Meetup.com: [Workshop#2](https://www.meetup.com/Golang-Warsaw/events/257401117/)
 
 Talks:
 
-1. Why Golang looks like that ([golang slide](2018_21_Meetup/WhyGoLangLooksLikeThat/whygolanglookslikethat.slide), [pdf export](2018_21_Meetup/WhyGoLangLooksLikeThat/whygolanglookslikethat.pdf)) - Tomasz Grodzki
+1. Why Golang looks like that ([golang slide](/2018/2018_21_Meetup/WhyGoLangLooksLikeThat/whygolanglookslikethat.slide), [pdf export](/2018/2018_21_Meetup/WhyGoLangLooksLikeThat/whygolanglookslikethat.pdf)) - Tomasz Grodzki
 
 2. Serverless in Golang, a live demo with [serverless](https://serverless.com/) and its [aws-go-dep](https://github.com/serverless/serverless/tree/master/lib/plugins/create/templates/aws-go-dep) for AWS Lambda<br />Bartosz Bonisławski [Hypatos.ai]
 
-0. [Intro](/2018_21_Meetup/Intro/index.pdf) ([html/revealjs](/2018_21_Meetup/Intro))
+0. [Intro](/2018/2018_21_Meetup/Intro/index.pdf) ([html/revealjs](/2018/2018_21_Meetup/Intro))
 
 Meetup.com: [#21](https://www.meetup.com/Golang-Warsaw/events/256566020/)
 
@@ -180,7 +180,7 @@ Talks:
 
 3. Zero-downtime deployments for your golang service with k8s ([slides](https://www.slideshare.net/WojciechBarczyski/zero-deployment-of-microservices-with-kubernetes), [demos and source code](https://github.com/wojciech12/talk_zero_downtime_deployment_with_kubernetes)) - Wojciech Barczynski
 
-0. [Intro](/2018_20_Meetup/Intro/index.pdf) ([html/revealjs](/2018_20_Meetup/Intro))
+0. [Intro](/2018/2018_20_Meetup/Intro/index.pdf) ([html/revealjs](/2018/2018_20_Meetup/Intro))
 
 Meetup.com: [#20](https://www.meetup.com/Golang-Warsaw/events/255260613/)
 
@@ -194,6 +194,6 @@ Talks:
 
 3. [Go-critic](https://github.com/go-critic/go-critic) - Oleg Kovalov [[github:@cristaloleg](https://github.com/cristaloleg)]
 
-0. [Intro](/2018_19_Meetup/Intro/index.pdf) ([html/revealjs](/2018_19_Meetup/Intro))
+0. [Intro](/2018/2018_19_Meetup/Intro/index.pdf) ([html/revealjs](/2018/2018_19_Meetup/Intro))
 
 Meetup.com: [#19](https://www.meetup.com/Golang-Warsaw/events/254200354/)
