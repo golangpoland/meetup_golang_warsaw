@@ -7,13 +7,23 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Warsaw #33 (Feb 20, 2020)
+
+Talks ([recording](https://www.youtube.com/watch?v=6gMvRV6sez8)):
+
+1.  [Adding policies to your Go apps using Open Policy Agent](./2020_33_Meetup/adding_policies_to_your_apps.pdf) - Marcin Wyszyński
+
+2. [Server-Sent Events for Go](https://speakerdeck.com/olegkovalov/server-sent-events-in-go) - Oleg Kovalov [github:@cristaloleg]
+
+Meetup.com: [#33](https://www.meetup.com/Golang-Warsaw/events/268449665/) ([LinkedIn](https://www.linkedin.com/posts/golang-warsaw-meetup_golang-warsaw-33-by-gogoapps-hypatos-activity-6636251861831692288-d2x7))
+
 ## Golang Warsaw #32 (Jan 1, 2020)
 
 Talks:
 
 1.  [A **bit** faster logging](/2020_32_Meetup/a-bit-faster-logging-hacking-logging-on-GKE.pdf) -  Paweł Pierścionek [Cludo]
 
-2. [Accessing Custom Kubernetes Resources from Golang](https://github.com/danielpacak/k8s-security-crds/blob/master/docs/index.pdf) [[live-coding source code](https://github.com/danielpacak/k8s-security-crds)] - Daniel Pacak [Aqua Security]
+2. [Accessing Custom Kubernetes Resources from Golang](https://github.com/danielpacak/k8s-security-crds/blob/master/docs/index.pdf) ([live-coding source code](https://github.com/danielpacak/k8s-security-crds)) - Daniel Pacak [Aqua Security]
 
 0. [Intro](/2020_32_Meetup/intro.pdf) ([pptx](/2020_32_Meetup/intro.pptx))
 
@@ -23,9 +33,9 @@ Meetup.com: [#32](https://www.meetup.com/Golang-Warsaw/events/267210686/) ([Link
 
 Talks:
 
-1.  [Konichiwa Golang Chan](/2019/2019_31_Meetup/Channels_Tomasz_Grodzki) - Tomasz Grodzki [[AlphaSOC](https://alphasoc.com/)]
+1.  [Konichiwa Golang Chan](/2019/2019_31_Meetup/Channels_Tomasz_Grodzki) ([recording](https://www.youtube.com/watch?v=AS9w-pc_3us)) - Tomasz Grodzki [[AlphaSOC](https://alphasoc.com/)]
 
-2. [Tales from Event Sourcing Pastures](https://flowdev.github.io/static/present/2019/event-sourcing/present.html) ([src](https://github.com/flowdev/present-event-sourcing)) - Ole Bulbuk [co-organizer [Berlin Golang Meetup](https://www.meetup.com/golang-users-berlin/)]
+2. [Tales from Event Sourcing Pastures](https://flowdev.github.io/static/present/2019/event-sourcing/present.html) ([src](https://github.com/flowdev/present-event-sourcing),[recording](https://www.youtube.com/watch?v=ACNYhoZrZEs)) - Ole Bulbuk [co-organizer [Berlin Golang Meetup](https://www.meetup.com/golang-users-berlin/)]
 
 0. [Intro](/2019/2019_31_Meetup/Intro_GoTurn10/index.pdf) ([html/revealjs](/2019/2019_31_Meetup/Intro_GoTurn10))
 
