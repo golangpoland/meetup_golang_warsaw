@@ -7,6 +7,19 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+
+## Golang Warsaw #34 (March 23, 2020) - online
+
+Talks ([recording](https://zoom.us/rec/play/6JJ-JL-tpzs3G9bA5gSDV_R9W9XofKys1Cgc-PBfnku0UyUHM1auMOMXNrHF9cJHT7oq3lBD3ZMqp-ki?continueMode=true&_x_zm_rtaid=fNb6Qla4RxmCa4OHwr6A8Q.1584994885546.9d0623093fc0d2c567bf0cade632e7c8&_x_zm_rhtaid=201)):
+
+1. [My open source projects and journey so far](https://drive.google.com/open?id=1zU2UNvQcNmuluRxKOwpGy7Ll1WDoPI9H) (OS projects: [octosql](https://github.com/cube2222/octosql) and [jql](https://github.com/cube2222/jql)) - Jakub Martin
+
+2. [Building GraphQL severs with gqlgen](./2020_34_Meetup/Building_GraphQL_servers_in_Go.pdf) ([present slides](https://github.com/fwojciec/warsaw-go-meetup-presentation), [example app src](https://github.com/fwojciec/gqlmeetup)) -  Filip Wojciechowski
+
+3. [Intro](./2020_34_Meetup/Intro/index.pdf) ([html/revealjs](./2020_34_Meetup/Intro))
+
+Meetup.com: [#34](https://www.meetup.com/Golang-Warsaw/events/269469393/) ([LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:6647094571010453504))
+
 ## Golang Warsaw #33 (Feb 20, 2020)
 
 Talks ([recording](https://www.youtube.com/watch?v=6gMvRV6sez8)):
