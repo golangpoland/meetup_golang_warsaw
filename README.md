@@ -7,6 +7,17 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Warsaw #35 (April 21, 2020) - Golang Poland - online
+
+1. [Parallelism in Go from the ground up](https://clap.page.link/goparallel) - Roberto Clapis
+
+2. [Migrating to Go Modules](https://bit.ly/GoPolandJFrog ) (Lightening Talk) - Kat Cosgrove [JFrog]
+
+3. [What every Gopher should know about arrays/slices](https://docs.google.com/presentation/d/1dXKb8w1f2pjtg5Mgy6Pcct6haL8u04nLuDlEuLUaxfc/edit?usp=sharing) - Bartłomiej Klimczak
+
+4. [Intro](./2020_35_Meetup_Poland/golang_poland.pdf) ([pptx](./2020_35_Meetup_Poland/golang_poland.pptx))
+
+Meetup.com: [#35](https://www.meetup.com/Golang-Warsaw/events/269755376/) ([Golang Poland #1](https://www.meetup.com/Golang-Poland/events/269727378/))
 
 ## Golang Warsaw #34 (March 23, 2020) - online
 
