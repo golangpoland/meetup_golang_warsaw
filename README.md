@@ -7,7 +7,24 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
-## Golang Warsaw #35 (April 21, 2020) - Golang Poland - online
+
+## Golang Poland #2 (May 26, 2020) - Golang Warsaw #36 - online
+
+Talks ([recordings](https://www.youtube.com/channel/UCGttUF2KmcTU2fwH8wJ5srA/videos?view=0&sort=dd&shelf_id=0)):
+
+1. [Garbage diving for Gophers](https://speakerdeck.com/sleepypioneer/garbage-diving-for-gophers) ([app src code](https://github.com/sleepypioneer/garbage_diving_for_gophers)) - Jessica Greene [Ecosia.org]
+
+2. [Thread safety with package sync](./2020_36_Meetup_Poland/thread-safety-tomasz-grodzki) - Tomasz Grodzki [AlphaSOC]
+
+3. [Understanding pseudo-versions, Go 1.13 and before vs Go 1.14](https://www.slideshare.net/MitaliBo/understanding-pseudoversions-moving-to-go-113-what-is-in-go-114-for-modules) - Mitali Bisht [Jfrog]
+
+4. [Intro](./2020_36_Meetup_Poland/golang_poland.pdf) ([pptx](./2020_36_Meetup_Poland/golang_poland.pptx))
+
+Meetup.com: [#36](https://www.meetup.com/Golang-Warsaw/events/270319842/) ([Golang Poland #2](https://www.meetup.com/Golang-Poland/events/270319738/))
+
+## Golang Poland #1 (April 21, 2020) - Golang Warsaw #35 - online
+
+Talks:
 
 1. [Parallelism in Go from the ground up](https://clap.page.link/goparallel) - Roberto Clapis
 

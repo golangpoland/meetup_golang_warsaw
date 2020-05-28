@@ -1,0 +1,219 @@
+Thread safety (with package sync)
+
+Golang Poland Meetup #2
+26 May 2020
+
+Tomasz Grodzki
+Co-Founder & Developer, AlphaSOC
+tomasz@alphasoc.com
+
+# https://github.com/tg
+
+* Outline
+
+- What's the problem?
+- Examples (good & bad)
+- Solutions
+- Live coding
+
+* What's the problem?
+
+Concurent writes to a memory block:
+
+.image concurrent-writes.png
+
+* What's the problem?
+
+Concurrent use of shared resources:
+
+- bytes in memory
+- data structure
+- network connection
+- ...
+
+* What's the problem?
+
+Critical section.
+
+- Part of the program operating on a shared resources.
+- Cannot be executed by more than one process at a time.
+
+* Examples
+
+* Example #1
+
+.code examples.go /#1/,/##/
+
+Good or bad?
+
+[bad]
+
+* Example #2
+
+.code examples.go /#2/,/##/
+
+[good]
+
+* Example #3
+
+.code examples.go /#3/,/##/
+
+[good]
+
+* Example #4
+
+.code examples.go /#4/,/##/
+
+[bad]
+
+* Example #5
+
+.code examples.go /#5/,/##/
+
+[good]
+
+* Solutions
+
+* Solutions
+
+- Local (non-shared) variables in routines
+- Immutable objects
+- Mutual exclusion (access serialization)
+- Atomic operations
+
+* Local variables
+
+.code solutions.go /#1/,/##/
+
+* Immutable objects
+
+As in the example #5:
+
+.code examples.go /#5/,/##/
+
+Might be useful to "hide" map in the structure to avoid writes.
+
+* Mutual exclusion
+
+.code solutions.go /#2/,/##/
+
+Each Lock must be Unlocked!
+
+* Atomic operations
+
+.code solutions.go /#3/,/##/
+
+* Atomic operations
+
+.code solutions.go /#4/,/##/
+
+Possible values of (v1, v2, r2):
+
+- (1, 2, 2)
+- (2, 1, 2)
+- (2, 1, 1)
+
+* package sync
+
+* sync.Mutex
+
+Mutual exclusion lock.
+
+Implements Lock() and Unlock().
+
+Critical section with only one executor at given time.
+
+Can cause deadlocks.
+
+* sync.RWMutex
+
+Reader/writer mutual exclusion lock.
+
+Separate locks for readers and writers:
+
+- RLock() / RUnlock()
+- Lock() / Unlock()
+
+Multiple readers allowed.
+
+Only one writer allowed (and no readers).
+
+* sync.Once
+
+Structure with a single method:
+
+	func (o *Once) Do(f func())
+
+Function `f` will be called only once.
+
+Useful for lazy initialization.
+
+* sync.WaitGroup
+
+Waits for a collection of goroutines to finish.
+
+Methods: 
+
+- Add(int)
+- Done()
+- Wait()
+
+* sync.Pool
+
+A set of temporary objects.
+
+Used to cache allocated but unused items for later reuse.
+
+Relieving pressure on garbage collector. 
+
+Used by fmt.Print to cache buffers (`[]byte`).
+
+* sync.Map
+
+Similar to:
+
+	map[interface{}]interface{}
+
+but safe for concurrent use.
+
+Specialized type with very specific use cases (see docs).
+
+Usually better to use regular map with mutex.
+
+* sync.Cond
+
+Condition variable.
+
+A rendezvous point for goroutines waiting for (or announcing) the occurrence of an event.
+
+Methods:
+
+- Wait()
+- Signal()
+- Broadcast()
+
+It's complex, simple cases can be implemented with channels (e.g. time.Ticker).
+
+* package sync/atomic
+
+Low-level atomic memory primitives useful for implementing synchronization algorithms.
+
+Implements:
+
+- Store
+- Load
+- Add
+- Swap
+- CompareAndSwap
+
+Limited to integers and pointers.
+
+* Live coding!
+
+* Live coding!
+
+Implementing thread safe cached DNS resolver.
+
+Multiple goroutines using a single resolver, benefiting from a common cache.
+
+[see cached-resolver.go]
