@@ -7,7 +7,7 @@ Ideas for talks: [google docs](https://goo.gl/9XiULU))
 ## Questions?
 
 1. Slack: #poland-warsaw on [gophers.slack.com](https://gophers.slack.com)
-2. Email: wb@hypatos.ai
+2. Email: wbarczynski.pro@gmail.com
 
 ### Where to find us?
 
