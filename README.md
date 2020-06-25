@@ -7,10 +7,23 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Poland #3 (Jun 25, 2020) - Golang Warsaw #37 - online
+
+Talks ([recording](https://www.youtube.com/channel/UCGttUF2KmcTU2fwH8wJ5srA/videos)):
+
+1. [Infrastructure for Machine Learning - TBA]() - Natalie Pistunovich [Aerospike]
+
+2. [Building event-driven applications with Watermill](./2020_37_Meetup_Poland/Robert_Laszczak_Introduction_to_Watermill.pdf) ([Watermill lib github](https://github.com/ThreeDotsLabs/watermill)) - Robert Laszczak [Three Dots Labs]
+
+3. [Go-Swagger in production: wins and pitfalls](https://speakerdeck.com/dreamworm/go-swagger-in-production-05586b24-9765-4015-b41f-08ce1d0400a0) - Ilya Kaznacheev
+
+4. [Intro](./2020_37_Meetup_Poland/golang_poland.pdf) ([pptx](./2020_37_Meetup_Poland/golang_poland.pptx))
+
+Meetup.com: [#37](https://www.meetup.com/Golang-Warsaw/events/271150465/) ([Golang Poland #3](https://www.meetup.com/Golang-Poland/events/271087432/))
 
 ## Golang Poland #2 (May 26, 2020) - Golang Warsaw #36 - online
 
-Talks ([recordings](https://www.youtube.com/channel/UCGttUF2KmcTU2fwH8wJ5srA/videos?view=0&sort=dd&shelf_id=0)):
+Talks ([recording](https://www.youtube.com/channel/UCGttUF2KmcTU2fwH8wJ5srA/videos?view=0&sort=dd&shelf_id=0)):
 
 1. [Garbage diving for Gophers](https://speakerdeck.com/sleepypioneer/garbage-diving-for-gophers) ([app src code](https://github.com/sleepypioneer/garbage_diving_for_gophers)) - Jessica Greene [Ecosia.org]
 
