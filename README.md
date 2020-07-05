@@ -11,7 +11,7 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 
 Talks ([recording](https://www.youtube.com/channel/UCGttUF2KmcTU2fwH8wJ5srA/videos)):
 
-1. [Infrastructure for Machine Learning - TBA]() - Natalie Pistunovich [Aerospike]
+1. [Infrastructure for Machine Learning](https://github.com/Pisush/Public-Speaking/blob/master/Slides/infra%2Bml-poland.pdf) - Natalie Pistunovich [Aerospike]
 
 2. [Building event-driven applications with Watermill](./2020_37_Meetup_Poland/Robert_Laszczak_Introduction_to_Watermill.pdf) ([Watermill lib github](https://github.com/ThreeDotsLabs/watermill)) - Robert Laszczak [Three Dots Labs]
 
