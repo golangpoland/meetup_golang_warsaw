@@ -7,6 +7,18 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Poland #4 (Jul 27, 2020) - Golang Warsaw #38 - online
+
+Talks ([recording](https://www.youtube.com/channel/UCGttUF2KmcTU2fwH8wJ5srA/videos)):
+
+1. [Pac Man from Scratch](https://docs.google.com/presentation/d/e/2PACX-1vR90ETOi1rr0RNnvCOySl6dR15PIfK3hJaUz06O9U7rIYBXQYZR7Z8IeEr_Q2SzXLGBmJxvml7DVnss/pub?start=false&loop=false&delayms=3000) ([pacgo@github](https://github.com/danicat/pacgo)) - Daniela Petruzalek [ThoughtWorks]
+
+2. [Generics Draft Proposal Review](https://github.com/ardanlabs/gotraining/tree/master/topics/go/generics) ([proposal](https://go.googlesource.com/proposal/+/refs/heads/master/design/go2draft-type-parameters.md), [survey](https://forms.gle/PCJLvaFenr4c7rmPA)) - Bill Kennedy [Ardan labs]
+
+3. [Intro](./2020_38_Meetup_Poland/golang_poland.pdf) ([pptx](./2020_38_Meetup_Poland/golang_poland.pptx))
+
+Meetup.com: [#38](https://www.meetup.com/Golang-Warsaw/events/271799241/) ([Golang Poland #4](https://www.meetup.com/Golang-Poland/events/271689429/))
+
 ## Golang Poland #3 (Jun 25, 2020) - Golang Warsaw #37 - online
 
 Talks ([recording](https://www.youtube.com/channel/UCGttUF2KmcTU2fwH8wJ5srA/videos)):
