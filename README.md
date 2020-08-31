@@ -7,6 +7,16 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Poland #5 (Aug 31, 2020) - Golang Warsaw #39 - online
+
+Talks ([recording](https://www.youtube.com/channel/UCGttUF2KmcTU2fwH8wJ5srA/videos)):
+
+1. [No-instrumentation Log Injection in Go with eBPF](https://docs.google.com/presentation/d/1EqM8hSkRMdBghzH1sLlK0DJmSKeWIrdlLC6GAMZ1W2Y/edit#slide=id.g91c85992bf_0_159) ([code](https://github.com/pixie-labs/pixie/tree/main/demos/simple-gotracing/trace_example)) - Zain Asgar [[Pixie-labs](https://github.com/pixie-labs/pixie)]
+
+2. [Introducing Encore: Simplified API Development for Go](https://docs.google.com/presentation/d/1m4j59Qfa5q4uJJwfjK-p-Xk_ZfmeKE05Z0MdDuwLDuo/edit?usp=sharing) - André Eriksson [encore.dev]
+
+Meetup.com: [#39](https://www.meetup.com/Golang-Warsaw/events/272639727/) ([Golang Poland #5](https://www.meetup.com/Golang-Poland/events/272639591/))
+
 ## Golang Poland #4 (Jul 27, 2020) - Golang Warsaw #38 - online
 
 Talks ([recording](https://www.youtube.com/channel/UCGttUF2KmcTU2fwH8wJ5srA/videos)):
