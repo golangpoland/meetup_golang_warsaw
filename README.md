@@ -7,6 +7,16 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Poland #6 (Sep 28, 2020) - Golang Warsaw #40 - online
+
+Talks ([recording](https://www.youtube.com/channel/UCGttUF2KmcTU2fwH8wJ5srA/videos)):
+
+1. [DIY Gosec: Detect complex code patterns using semantic grep](https://r2c.dev/mile_high_gophers.pdf) - Yoann Padioleau [[r2c](https://r2c.dev)]
+
+2. [Microservices - The End of Software Design](https://github.com/flowdev/present-go/tree/master/2020/soft-design) - Ole Bulbuk [co-organizer [Berlin Golang Meetup](https://www.meetup.com/golang-users-berlin/)]
+
+Meetup.com: [#40](https://www.meetup.com/Golang-Warsaw/events/273236111/) ([Golang Poland #6](https://www.meetup.com/Golang-Poland/events/272935924))
+
 ## Golang Poland #5 (Aug 31, 2020) - Golang Warsaw #39 - online
 
 Talks ([recording](https://www.youtube.com/channel/UCGttUF2KmcTU2fwH8wJ5srA/videos)):
