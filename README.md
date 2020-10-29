@@ -7,6 +7,19 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+
+## Golang Poland #7 (Oct 29, 2020) - Golang Warsaw #41 - online
+
+Talks ([recording](https://www.youtube.com/channel/UCGttUF2KmcTU2fwH8wJ5srA/videos)):
+
+1. [Designing for Failure](https://github.com/italolelis/talks/tree/master/talks/designing-for-failure) - Italo Vietro [Lykon]
+
+2. [Ginkgo & Gomega](https://github.com/egurnov/ginkgo-talk-2020) - Alexander Egurnov [PubNative]
+
+3. [Blockchain Development in Go](https://docs.google.com/presentation/d/1WCPnGE5ZlEqE2SAYTJc_Lgwr0prahTkDf2XAPbkbglQ/edit?usp=sharing) - Pawel Zaremba [Maker Foundation]
+
+Meetup.com: [#41](https://www.meetup.com/Golang-Warsaw/events/273948424/) ([Golang Poland #7](https://www.meetup.com/Golang-Poland/events/273948416/))
+
 ## Golang Poland #6 (Sep 28, 2020) - Golang Warsaw #40 - online
 
 Talks ([recording](https://www.youtube.com/channel/UCGttUF2KmcTU2fwH8wJ5srA/videos)):
