@@ -7,6 +7,19 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Poland #8 (Nov 26, 2020) - Golang Warsaw #42 - online
+
+Talks ([recording](https://www.youtube.com/channel/UCGttUF2KmcTU2fwH8wJ5srA/videos)):
+
+1. [Machine learning for software engineers](https://www.papercall.io/speakers/42062/speaker_talks/141788-intro-to-ai-for-software-engineers-using-go-learn) - Miriah Peterson [Weave HQ]
+
+2. [Depenguard: protect your project structure](https://speakerdeck.com/olegkovalov/impguard-protect-your-project-structure) (soon on [github](https://github.com/cristaloleg/impguard)) - Oleg Kovalov [GogoApps]
+
+3. [Optimizing Go for Clouds: Practical Intro](https://gitpitch.com/bwplotka/my/slides?p=slides/optimizing-go-for-clouds/go-poland-meetup-11-2020#/) - Bartek Plotka [Redhat]
+
+4. [Intro](./2020_42_Meetup_Poland/golang_poland.pdf) ([pptx](./2020_42_Meetup_Poland/golang_poland.pptx))
+
+Meetup.com: [#42](https://www.meetup.com/Golang-Warsaw/events/274633358/) ([Golang Poland #8](https://www.meetup.com/Golang-Poland/events/274616031/))
 
 ## Golang Poland #7 (Oct 29, 2020) - Golang Warsaw #41 - online
 
