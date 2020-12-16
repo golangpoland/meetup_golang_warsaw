@@ -7,6 +7,16 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Poland #9 (Dec 14, 2020) - Golang Warsaw #43 - online
+
+Talks ([recording](https://www.youtube.com/channel/UCGttUF2KmcTU2fwH8wJ5srA/videos)):
+
+1. [Build pipeline for a Go project](https://docs.google.com/presentation/d/1fJ26B1D1VkxC-1DppegPCe8YOaA3Ayrbke2yAx-Kzcs/edit?usp=sharing) ([github](https://github.com/pellared/go-build-pipeline-demo)) - Robert Pająk [SolarWinds]
+
+2. [Go Concurrency First Steps](https://tiny.cc/golang-nyc-concurrency) - Mofizur Rahman [IBM]
+
+Meetup.com: [#43](https://www.meetup.com/Golang-Warsaw/events/274973066/) ([Golang Poland #9](https://www.meetup.com/Golang-Poland/events/274951202/))
+
 ## Golang Poland #8 (Nov 26, 2020) - Golang Warsaw #42 - online
 
 Talks ([recording](https://www.youtube.com/channel/UCGttUF2KmcTU2fwH8wJ5srA/videos)):
