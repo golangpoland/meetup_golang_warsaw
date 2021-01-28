@@ -7,6 +7,16 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Poland #10 (Jan 28, 2021) - Golang Warsaw #44 - online
+
+Talks ([recording](https://www.youtube.com/channel/UCGttUF2KmcTU2fwH8wJ5srA/videos)):
+
+1. Creating Bencode serialiser and deserialiser in Go, good patterns, optimisation and testing. Also API design! ([slides](https://speakerdeck.com/olegkovalov/bencode-serializer-and-deserializer-in-go)) -  Oleg Kovalov [GogoApps]
+
+2. A quick introduction to tensor for machine learning in Go with [gorgonia/tensor](https://github.com/gorgonia/tensor) - Xuanyi Chew [[github.com/chewxy](https://github.com/chewxy)]
+
+Meetup.com: [#44](https://www.meetup.com/Golang-Warsaw/events/275959656/) ([Golang Poland #10](https://www.meetup.com/Golang-Poland/events/275812689))
+
 ## Golang Poland #9 (Dec 14, 2020) - Golang Warsaw #43 - online
 
 Talks ([recording](https://www.youtube.com/channel/UCGttUF2KmcTU2fwH8wJ5srA/videos)):
