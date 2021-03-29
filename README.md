@@ -7,6 +7,16 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Poland #12 (Mar 22, 2021) - Golang Warsaw #46 - online
+
+Talks ([recording](https://www.youtube.com/channel/UCGttUF2KmcTU2fwH8wJ5srA/videos)):
+
+1. [Into to Virtual Kubelet - featuring KIP](https://docs.google.com/presentation/d/1K7f3bgBpSAGUpsgbm04w2fTo1rzbeIJQzfVjIkn0qHY/edit?usp=sharing) - Paweł Bojanowski [Elotl]
+
+2. [Don’t wait to communicate! A case for early abstraction](https://docs.google.com/presentation/d/1q7vQZbhAvfoZ3K81uZ7_nSn58dsL_wNEyXWJSx9noz4/edit?usp=sharing) - Ronna Steinberg
+
+Meetup.com: [#46](https://www.meetup.com/Golang-Warsaw/events/277065876/) ([Golang Poland #12](https://www.meetup.com/Golang-Poland/events/277065413/))
+
 ## Golang Poland #11 (Feb 22, 2021) - Golang Warsaw #45 - online
 
 Talks:
