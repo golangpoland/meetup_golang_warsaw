@@ -7,6 +7,16 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Poland #11 (Feb 22, 2021) - Golang Warsaw #45 - online
+
+Talks:
+
+1. My Go Proverbs - Bartłomiej Klimczak
+
+2. Instrumenting your Go code with custom Contexts - Jakub Martin [Spacelift]
+
+Meetup.com: [#45](https://www.meetup.com/Golang-Warsaw/events/276369330/) ([Golang Poland #11](https://www.meetup.com/Golang-Poland/events/276369254/))
+
 ## Golang Poland #10 (Jan 28, 2021) - Golang Warsaw #44 - online
 
 Talks ([recording](https://www.youtube.com/channel/UCGttUF2KmcTU2fwH8wJ5srA/videos)):
