@@ -57,7 +57,7 @@ Talks ([recording](https://www.youtube.com/channel/UCGttUF2KmcTU2fwH8wJ5srA/vide
 
 3. [Optimizing Go for Clouds: Practical Intro](https://gitpitch.com/bwplotka/my/slides?p=slides/optimizing-go-for-clouds/go-poland-meetup-11-2020#/) - Bartek Plotka [Redhat]
 
-4. [Intro](./2020_42_Meetup_Poland/golang_poland.pdf) ([pptx](./2020_42_Meetup_Poland/golang_poland.pptx))
+4. [Intro](./2020/2020_42_Meetup_Poland/golang_poland.pdf) ([pptx](./2020/2020_42_Meetup_Poland/golang_poland.pptx))
 
 Meetup.com: [#42](https://www.meetup.com/Golang-Warsaw/events/274633358/) ([Golang Poland #8](https://www.meetup.com/Golang-Poland/events/274616031/))
 
@@ -101,7 +101,7 @@ Talks ([recording](https://www.youtube.com/channel/UCGttUF2KmcTU2fwH8wJ5srA/vide
 
 2. [Generics Draft Proposal Review](https://github.com/ardanlabs/gotraining/tree/master/topics/go/generics) ([proposal](https://go.googlesource.com/proposal/+/refs/heads/master/design/go2draft-type-parameters.md), [survey](https://forms.gle/PCJLvaFenr4c7rmPA)) - Bill Kennedy [Ardan labs]
 
-3. [Intro](./2020_38_Meetup_Poland/golang_poland.pdf) ([pptx](./2020_38_Meetup_Poland/golang_poland.pptx))
+3. [Intro](./2020/2020_38_Meetup_Poland/golang_poland.pdf) ([pptx](./2020/2020_38_Meetup_Poland/golang_poland.pptx))
 
 Meetup.com: [#38](https://www.meetup.com/Golang-Warsaw/events/271799241/) ([Golang Poland #4](https://www.meetup.com/Golang-Poland/events/271689429/))
 
@@ -111,11 +111,11 @@ Talks ([recording](https://www.youtube.com/channel/UCGttUF2KmcTU2fwH8wJ5srA/vide
 
 1. [Infrastructure for Machine Learning](https://github.com/Pisush/Public-Speaking/blob/master/Slides/infra%2Bml-poland.pdf) - Natalie Pistunovich [Aerospike]
 
-2. [Building event-driven applications with Watermill](./2020_37_Meetup_Poland/Robert_Laszczak_Introduction_to_Watermill.pdf) ([Watermill lib github](https://github.com/ThreeDotsLabs/watermill)) - Robert Laszczak [Three Dots Labs]
+2. [Building event-driven applications with Watermill](./2020/2020_37_Meetup_Poland/Robert_Laszczak_Introduction_to_Watermill.pdf) ([Watermill lib github](https://github.com/ThreeDotsLabs/watermill)) - Robert Laszczak [Three Dots Labs]
 
 3. [Go-Swagger in production: wins and pitfalls](https://speakerdeck.com/dreamworm/go-swagger-in-production-05586b24-9765-4015-b41f-08ce1d0400a0) - Ilya Kaznacheev
 
-4. [Intro](./2020_37_Meetup_Poland/golang_poland.pdf) ([pptx](./2020_37_Meetup_Poland/golang_poland.pptx))
+4. [Intro](./2020/2020_37_Meetup_Poland/golang_poland.pdf) ([pptx](./2020/2020_37_Meetup_Poland/golang_poland.pptx))
 
 Meetup.com: [#37](https://www.meetup.com/Golang-Warsaw/events/271150465/) ([Golang Poland #3](https://www.meetup.com/Golang-Poland/events/271087432/))
 
@@ -125,11 +125,11 @@ Talks ([recording](https://www.youtube.com/channel/UCGttUF2KmcTU2fwH8wJ5srA/vide
 
 1. [Garbage diving for Gophers](https://speakerdeck.com/sleepypioneer/garbage-diving-for-gophers) ([app src code](https://github.com/sleepypioneer/garbage_diving_for_gophers)) - Jessica Greene [Ecosia.org]
 
-2. [Thread safety with package sync](./2020_36_Meetup_Poland/thread-safety-tomasz-grodzki) - Tomasz Grodzki [AlphaSOC]
+2. [Thread safety with package sync](./2020/2020_36_Meetup_Poland/thread-safety-tomasz-grodzki) - Tomasz Grodzki [AlphaSOC]
 
 3. [Understanding pseudo-versions, Go 1.13 and before vs Go 1.14](https://www.slideshare.net/MitaliBo/understanding-pseudoversions-moving-to-go-113-what-is-in-go-114-for-modules) - Mitali Bisht [Jfrog]
 
-4. [Intro](./2020_36_Meetup_Poland/golang_poland.pdf) ([pptx](./2020_36_Meetup_Poland/golang_poland.pptx))
+4. [Intro](./2020/2020_36_Meetup_Poland/golang_poland.pdf) ([pptx](./2020/2020_36_Meetup_Poland/golang_poland.pptx))
 
 Meetup.com: [#36](https://www.meetup.com/Golang-Warsaw/events/270319842/) ([Golang Poland #2](https://www.meetup.com/Golang-Poland/events/270319738/))
 
@@ -143,7 +143,7 @@ Talks:
 
 3. [What every Gopher should know about arrays/slices](https://docs.google.com/presentation/d/1dXKb8w1f2pjtg5Mgy6Pcct6haL8u04nLuDlEuLUaxfc/edit?usp=sharing) - Bartłomiej Klimczak
 
-4. [Intro](./2020_35_Meetup_Poland/golang_poland.pdf) ([pptx](./2020_35_Meetup_Poland/golang_poland.pptx))
+4. [Intro](./2020/2020_35_Meetup_Poland/golang_poland.pdf) ([pptx](./2020/2020_35_Meetup_Poland/golang_poland.pptx))
 
 Meetup.com: [#35](https://www.meetup.com/Golang-Warsaw/events/269755376/) ([Golang Poland #1](https://www.meetup.com/Golang-Poland/events/269727378/))
 
@@ -153,9 +153,9 @@ Talks ([recording](https://zoom.us/rec/play/6JJ-JL-tpzs3G9bA5gSDV_R9W9XofKys1Cgc
 
 1. [My open source projects and journey so far](https://drive.google.com/open?id=1zU2UNvQcNmuluRxKOwpGy7Ll1WDoPI9H) (OS projects: [octosql](https://github.com/cube2222/octosql) and [jql](https://github.com/cube2222/jql)) - Jakub Martin
 
-2. [Building GraphQL severs with gqlgen](./2020_34_Meetup/Building_GraphQL_servers_in_Go.pdf) ([present slides](https://github.com/fwojciec/warsaw-go-meetup-presentation), [example app src](https://github.com/fwojciec/gqlmeetup)) -  Filip Wojciechowski
+2. [Building GraphQL severs with gqlgen](./2020/2020_34_Meetup/Building_GraphQL_servers_in_Go.pdf) ([present slides](https://github.com/fwojciec/warsaw-go-meetup-presentation), [example app src](https://github.com/fwojciec/gqlmeetup)) -  Filip Wojciechowski
 
-3. [Intro](./2020_34_Meetup/Intro/index.pdf) ([html/revealjs](./2020_34_Meetup/Intro))
+3. [Intro](./2020/2020_34_Meetup/Intro/index.pdf) ([html/revealjs](./2020/2020_34_Meetup/Intro))
 
 Meetup.com: [#34](https://www.meetup.com/Golang-Warsaw/events/269469393/) ([LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:6647094571010453504))
 
@@ -163,7 +163,7 @@ Meetup.com: [#34](https://www.meetup.com/Golang-Warsaw/events/269469393/) ([Link
 
 Talks ([recording](https://www.youtube.com/watch?v=6gMvRV6sez8)):
 
-1.  [Adding policies to your Go apps using Open Policy Agent](./2020_33_Meetup/adding_policies_to_your_apps.pdf) - Marcin Wyszyński
+1.  [Adding policies to your Go apps using Open Policy Agent](./2020/2020_33_Meetup/adding_policies_to_your_apps.pdf) - Marcin Wyszyński
 
 2. [Server-Sent Events for Go](https://speakerdeck.com/olegkovalov/server-sent-events-in-go) - Oleg Kovalov [github:@cristaloleg]
 
@@ -173,11 +173,11 @@ Meetup.com: [#33](https://www.meetup.com/Golang-Warsaw/events/268449665/) ([Link
 
 Talks:
 
-1.  [A **bit** faster logging](/2020_32_Meetup/a-bit-faster-logging-hacking-logging-on-GKE.pdf) -  Paweł Pierścionek [Cludo]
+1.  [A **bit** faster logging](./2020/2020_32_Meetup/a-bit-faster-logging-hacking-logging-on-GKE.pdf) -  Paweł Pierścionek [Cludo]
 
 2. [Accessing Custom Kubernetes Resources from Golang](https://github.com/danielpacak/k8s-security-crds/blob/master/docs/index.pdf) ([live-coding source code](https://github.com/danielpacak/k8s-security-crds)) - Daniel Pacak [Aqua Security]
 
-0. [Intro](/2020_32_Meetup/intro.pdf) ([pptx](/2020_32_Meetup/intro.pptx))
+0. [Intro](./2020/2020_32_Meetup/intro.pdf) ([pptx](./2020/2020_32_Meetup/intro.pptx))
 
 Meetup.com: [#32](https://www.meetup.com/Golang-Warsaw/events/267210686/) ([LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:6620012814612381696))
 
