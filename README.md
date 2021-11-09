@@ -7,6 +7,17 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+
+## Golang Poland #13 (Nov 8, 2021) - Golang Warsaw #47 - online
+
+Talks:
+
+1. [Why you should write an Operator for your Kubernetes app, and how?](https://docs.google.com/presentation/d/1UUSJXagtarjup7owHJxPY4ckCdN__oPjBym61zMRkCI) - Chris Suszynski [Red Hat]
+
+2. [Build your own telemetry collector with Open Telemetry](https://docs.google.com/presentation/d/1HkL1HWCL6bAdQlLfDS7110ZWibmtAT0o4FQOkbc86B0/edit?usp=sharing) - Patryk Malek [Sumo Logic]
+
+Meetup.com: [#47](https://www.meetup.com/Golang-Warsaw/events/281098966/) ([Golang Poland #13](https://www.meetup.com/Golang-Poland/events/281029111/))
+
 ## Golang Poland #12 (Mar 22, 2021) - Golang Warsaw #46 - online
 
 Talks ([recording](https://www.youtube.com/channel/UCGttUF2KmcTU2fwH8wJ5srA/videos)):
