@@ -7,6 +7,17 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Warsaw #48 (Sep 15, 2022) - Golang Poland #14 - in person
+
+Talks:
+
+1. How to deploy your first web application? - Jakub Daliga
+
+2. Instrument your Go backend in minutes! - Łukasz Gut [Grafana]
+
+3. [Intro](./2022/2022_48_Meetup_Warsaw/intro.pdf) ([pptx](./2022/2022_48_Meetup_Warsaw/intro.pptx))
+
+Meetup.com: [#48](https://www.meetup.com/golang-warsaw/events/287179780/) / ([Poland #14](https://www.meetup.com/golang-poland/events/287994380/))
 
 ## Golang Poland #13 (Nov 8, 2021) - Golang Warsaw #47 - online
 
