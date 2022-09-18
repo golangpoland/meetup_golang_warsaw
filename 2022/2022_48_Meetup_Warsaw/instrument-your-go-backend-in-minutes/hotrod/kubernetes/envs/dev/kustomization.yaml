@@ -1,0 +1,7 @@
+resources:
+  - ../../base
+  - grafana
+  - grafana-agent
+  - loki
+  - mimir
+  - tempo

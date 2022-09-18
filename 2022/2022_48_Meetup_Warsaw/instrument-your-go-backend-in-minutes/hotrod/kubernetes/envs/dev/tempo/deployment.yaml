@@ -1,0 +1,67 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: tempo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: tempo
+  template:
+    metadata:
+      labels:
+        name: tempo
+    spec:
+      containers:
+        - name: tempo
+          image: grafana/tempo:latest
+          args:
+            - "-config.file=/etc/tempo/config.yaml"
+          ports:
+            - name: tempo-http
+              containerPort: 3200
+            - name: jaeger-http
+              containerPort: 14268
+            - name: otlp-http
+              containerPort: 4318
+            - name: otlp-grpc
+              containerPort: 4317
+            - name: zipkin-grpc
+              containerPort: 9411
+          readinessProbe:
+            httpGet:
+              path: /ready
+              port: 3200
+            initialDelaySeconds: 10
+            timeoutSeconds: 60
+          volumeMounts:
+            - name: tempo-config
+              mountPath: /etc/tempo
+      volumes:
+        - name: tempo-config
+          configMap:
+            name: tempo-config
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: tempo
+spec:
+  selector:
+    name: tempo
+  ports:
+    - name: tempo-http
+      port: 3200
+      targetPort: 3200
+    - name: jaeger-http
+      port: 14268
+      targetPort: 14268
+    - name: otlp-http
+      port: 4318
+      targetPort: 4318
+    - name: otlp-grpc
+      port: 4317
+      targetPort: 4317
+    - name: zipkin-grpc
+      port: 9411
+      targetPort: 9411

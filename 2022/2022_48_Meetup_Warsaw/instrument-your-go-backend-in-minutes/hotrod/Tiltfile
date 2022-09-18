@@ -1,0 +1,61 @@
+# Build binary
+local_resource(
+  'go-compile-qms',
+  cmd='make build',
+  deps=['./Makefile', './cmd', './pkg', './services'],
+  labels=["local-job"],
+)
+
+# Build Docker images
+docker_build(
+    'hotrod',
+    '.',
+    dockerfile='Dockerfile',
+)
+
+# Kustomize
+k8s_yaml(kustomize('kubernetes/envs/dev'))
+
+# K8s resources
+k8s_resource(
+    'grafana-agent-logs',
+    labels=['operations'],
+)
+
+k8s_resource(
+    'grafana-agent-metrics',
+    labels=['operations'],
+)
+
+k8s_resource(
+    'grafana-agent-traces',
+    labels=['operations'],
+)
+
+k8s_resource(
+    'loki',
+    labels=['observability'],
+)
+
+k8s_resource(
+    'grafana',
+    port_forwards=['3000'],
+    labels=['observability'],
+)
+
+k8s_resource(
+    'mimir',
+    labels=['observability'],
+)
+
+k8s_resource(
+    'tempo',
+    port_forwards=['3200'],
+    labels=['observability'],
+)
+
+k8s_resource(
+    "hotrod",
+     port_forwards=['6789'],
+     labels=["hotrod"],
+)

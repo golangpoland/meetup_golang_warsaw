@@ -1,0 +1,5 @@
+resources:
+  - daemonset.yaml
+  - deployment.yaml
+  - statefulset.yaml
+  - configmap.yaml

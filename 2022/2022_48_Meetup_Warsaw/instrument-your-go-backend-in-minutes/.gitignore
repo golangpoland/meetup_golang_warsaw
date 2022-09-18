@@ -1,0 +1,54 @@
+# Binaries for programs and plugins
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+# vendor/
+
+# Go workspace file
+go.work
+
+# Binaries
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.war
+*.ear
+*.sar
+*.class
+
+# IntelliJ project files
+*.iml
+*.iws
+*.ipr
+.idea/
+
+# OS
+.DS_Store
+
+# Misc
+gen
+spanpb
+timescaledb_data
+*.swp
+release.properties
+pom.xml.releaseBackup
+pom.xml.tag
+
+# Env
+.env
