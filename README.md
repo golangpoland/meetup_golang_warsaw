@@ -13,7 +13,7 @@ Talks:
 
 1. How to deploy your first web application? - Jakub Daliga
 
-2. Instrument your Go backend in minutes! - Łukasz Gut [Grafana]
+2. [Instrument your Go backend in minutes!](./2022/2022_48_Meetup_Warsaw/instrument-your-go-backend-in-minutes) - [Łukasz Gut](https://github.com/Blinkuu) [Grafana]
 
 3. [Intro](./2022/2022_48_Meetup_Warsaw/intro.pdf) ([pptx](./2022/2022_48_Meetup_Warsaw/intro.pptx))
 
