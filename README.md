@@ -7,6 +7,20 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+
+## Golang Warsaw #50 (Jan 31, 2023)
+
+Talks:
+
+1. [Authorization with Go with Policy as Code]() - Michał Goliński (Spacelift.io)
+
+2. Catching up with other Golang community member
+
+3. [intro](./2023/2023_50_Meetup_Warsaw/intro.pdf) ([pptx](./2023/2023_50_Meetup_Warsaw/intro.pptx))
+
+Meetup.com: [#50](https://www.meetup.com/golang-warsaw/events/290964890/) ([LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7020496325284667392))
+
+
 ## Golang Warsaw #49 (Nov 15, 2022)
 
 Talks:
