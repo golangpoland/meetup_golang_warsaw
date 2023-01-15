@@ -12,6 +12,7 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 Talks:
 
 1. [Adding policies to your Golang App with Open Policy Agent](https://github.com/wojciech12/talk_policies_for_your_apps_with_OpenPolicyAgent) - Wojciech Barczynski (Spacelift.io)
+
 2. Fishbowl Conversation v3
 
 Meetup.com: [#49](https://www.meetup.com/golang-warsaw/events/289418127/) ([LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:6997480152137908224))
