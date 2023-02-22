@@ -7,6 +7,17 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Warsaw #51 (Mar 16, 2023)
+
+Talks:
+
+1. How contributing to Open Source looks like - Robert Pająk
+
+2. Writing faster Redis client - Oleg Kovalov
+
+3. [intro](./2023/2023_51_Meetup_Warsaw/intro.pdf) ([pptx](./2023/2023_51_Meetup_Warsaw/intro.pptx))
+
+Meetup.com: [#51](https://www.meetup.com/golang-warsaw/events/291800790/) ([LinkedIn]())
 
 ## Golang Warsaw #50 (Jan 31, 2023)
 
