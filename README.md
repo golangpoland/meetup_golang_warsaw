@@ -13,7 +13,7 @@ Talks:
 
 1. How contributing to Open Source looks like - Robert Pająk
 
-2. Writing faster Redis client - Oleg Kovalov
+2. [Writing faster Redis client](https://speakerdeck.com/olegkovalov/writing-faster-redis-client) - Oleg Kovalov
 
 3. [intro](./2023/2023_51_Meetup_Warsaw/intro.pdf) ([pptx](./2023/2023_51_Meetup_Warsaw/intro.pptx))
 
