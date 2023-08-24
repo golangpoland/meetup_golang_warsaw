@@ -7,6 +7,18 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Warsaw #52 (Aug 30, 2023)
+
+Talks:
+
+1. You need Event Mesh, not Service Mesh - Chris Suszynski (Redhat)
+
+2. Achieving Ultimate DevEx with DevPod - Przemek Białoń (Loft Labs)
+
+3. [intro](./2023/2023_52_Meetup_Warsaw/intro.pdf) ([pptx](./2023/2023_52_Meetup_Warsaw/intro.pptx))
+
+Meetup.com: [#52](https://www.meetup.com/golang-warsaw/events/295428681/) ([LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7101967472836120576))
+
 ## Golang Warsaw #51 (Mar 16, 2023)
 
 Talks:
