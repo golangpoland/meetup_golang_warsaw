@@ -21,9 +21,9 @@ Meetup.com: [#53](https://www.meetup.com/golang-warsaw/events/295931450/) ([Link
 
 Talks:
 
-1. You need Event Mesh, not Service Mesh - Chris Suszynski (Redhat)
+1. [You need Event Mesh, not Service Mesh](https://speakerdeck.com/cardil/you-need-event-mesh-not-service-mesh-golang-warsaw)([code](https://github.com/cardil/cabs-usvc/)) - Chris Suszynski (Redhat)
 
-2. Achieving Ultimate DevEx with DevPod - Przemek Białoń (Loft Labs)
+2. [Achieving Ultimate DevEx with DevPod](https://drive.google.com/open?id=1vG7tDx87uIOJBlukK8eKYMKvaO8VPgFw3w2kDh6H8yA) - Przemek Białoń (Loft Labs)
 
 3. [intro](./2023/2023_52_Meetup_Warsaw/intro.pdf) ([pptx](./2023/2023_52_Meetup_Warsaw/intro.pptx))
 
@@ -35,7 +35,7 @@ Talks:
 
 1. How contributing to Open Source looks like - Robert Pająk
 
-2. Writing faster Redis client - Oleg Kovalov
+2. [Writing faster Redis client](https://speakerdeck.com/olegkovalov/writing-faster-redis-client) - Oleg Kovalov
 
 3. [intro](./2023/2023_51_Meetup_Warsaw/intro.pdf) ([pptx](./2023/2023_51_Meetup_Warsaw/intro.pptx))
 
