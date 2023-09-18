@@ -7,6 +7,16 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Warsaw #53 (Sep 20, 2023)
+
+Talks:
+
+1. Transitioning to Go - Robert Pajak
+2. Hedged requests in Go - Oleg Kovalov
+3. [intro](./2023/2023_53_Meetup_Warsaw/intro/golang-warsaw-53.pdf) ([pptx](./2023/2023_53_Meetup_Warsaw/intro/golang-warsaw-53.pptx))
+
+Meetup.com: [#53](https://www.meetup.com/golang-warsaw/events/295931450/) ([LinkedIn](https://www.linkedin.com/posts/blinku_join-us-at-golang-warsaw-meetup-53-activity-7109516095983620096-Ge-x?utm_source=share&utm_medium=member_desktop))
+
 ## Golang Warsaw #52 (Aug 30, 2023)
 
 Talks:
@@ -208,7 +218,7 @@ Talks:
 
 1. [Parallelism in Go from the ground up](https://clap.page.link/goparallel) - Roberto Clapis
 
-2. [Migrating to Go Modules](https://bit.ly/GoPolandJFrog ) (Lightening Talk) - Kat Cosgrove [JFrog]
+2. [Migrating to Go Modules](https://bit.ly/GoPolandJFrog) (Lightening Talk) - Kat Cosgrove [JFrog]
 
 3. [What every Gopher should know about arrays/slices](https://docs.google.com/presentation/d/1dXKb8w1f2pjtg5Mgy6Pcct6haL8u04nLuDlEuLUaxfc/edit?usp=sharing) - Bartłomiej Klimczak
 
