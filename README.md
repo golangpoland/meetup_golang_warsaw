@@ -11,7 +11,7 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 
 Talks:
 
-1. Transitioning to Go - Robert Pajak
+1. [Transitioning to Go - Robert Pajak](https://docs.google.com/presentation/d/1dr7_X5af7odX-rLPbcuhK4kAelLXVWc_V8FKN-cCCyc/edit?usp=sharing) ([pdf](./2023/2023_53_Meetup_Warsaw/Transitioning%20to%20Go.pdf))
 2. Hedged requests in Go - Oleg Kovalov ([slides](https://speakerdeck.com/olegkovalov/hedged-requests-in-go))
 3. [intro](./2023/2023_53_Meetup_Warsaw/intro/golang-warsaw-53.pdf) ([pptx](./2023/2023_53_Meetup_Warsaw/intro/golang-warsaw-53.pptx))
 
