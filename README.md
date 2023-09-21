@@ -12,7 +12,7 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 Talks:
 
 1. Transitioning to Go - Robert Pajak
-2. Hedged requests in Go - Oleg Kovalov
+2. Hedged requests in Go - Oleg Kovalov ([slides](https://speakerdeck.com/olegkovalov/hedged-requests-in-go))
 3. [intro](./2023/2023_53_Meetup_Warsaw/intro/golang-warsaw-53.pdf) ([pptx](./2023/2023_53_Meetup_Warsaw/intro/golang-warsaw-53.pptx))
 
 Meetup.com: [#53](https://www.meetup.com/golang-warsaw/events/295931450/) ([LinkedIn](https://www.linkedin.com/posts/blinku_join-us-at-golang-warsaw-meetup-53-activity-7109516095983620096-Ge-x?utm_source=share&utm_medium=member_desktop))
