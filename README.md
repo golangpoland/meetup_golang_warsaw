@@ -7,6 +7,18 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Warsaw #54 (Oct 26, 2023)
+
+Talks:
+
+1. Go-first End to End Tests for Highly Stateful Features - Kuba Martin (Spacelift)
+
+2. Discussion Panel - Łukasz Gut and Jakub Daliga
+
+3. [intro](./2023/2023_54_Meetup_Warsaw/intro/golang-warsaw-54.pdf) ([pptx](./2023/2023_54_Meetup_Warsaw/intro/golang-warsaw-54.pptx))
+
+Meetup: [#54](https://www.meetup.com/golang-warsaw/events/296489663/) ([LinkedIn](https://www.linkedin.com/feed/update/urn:li:activity:7118185103645642752))
+
 ## Golang Warsaw #53 (Sep 20, 2023)
 
 Talks:
