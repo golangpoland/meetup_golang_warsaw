@@ -7,6 +7,18 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Warsaw #55 (Jan 24, 2024)
+
+Talks:
+
+1. x
+
+2. y
+
+3. [intro](./2024/2024_55_Meetup_Warsaw/intro/golang-warsaw-55.pdf) ([pptx](./2024/2024_55_Meetup_Warsaw/intro/golang-warsaw-55.pptx))
+
+Meetup: x ([y]())
+
 ## Golang Warsaw #54 (Oct 26, 2023)
 
 Talks:
