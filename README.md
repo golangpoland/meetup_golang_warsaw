@@ -7,6 +7,18 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Warsaw #59 (July 10, 2024)
+
+Talks:
+
+1. [How to start a VC-backed startup](./2024/2024_59_Meetup_Warsaw/how-to-start-vc-backed-startup.pdf) - Jacek Migdal ([Quesma](https://quesma.com))
+
+2. 7 years of talking to people - Jakub Daliga (StrongDM)
+
+3. Clean APIs with Huma Rocks! - Lukasz Gut (Grafana Labs)
+
+Meetup: [#59](https://www.meetup.com/golang-warsaw/events/301829415)
+
 ## Golang Warsaw #55 (Jan 24, 2024)
 
 Talks:
