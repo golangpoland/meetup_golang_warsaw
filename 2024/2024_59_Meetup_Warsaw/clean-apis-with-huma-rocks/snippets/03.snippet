@@ -1,0 +1,31 @@
+package main
+
+import (
+	"context"
+	"net/http"
+
+	"github.com/danielgtaylor/huma/v2"
+	"github.com/danielgtaylor/huma/v2/adapters/humago"
+
+	_ "github.com/danielgtaylor/huma/v2/formats/cbor"
+)
+
+// START OMIT
+func main() {
+	router := http.NewServeMux()
+	api := humago.New(router, huma.DefaultConfig("My API", "1.0.0"))
+
+	huma.Get(
+		api,
+		"/greeting/{name}",
+		func(ctx context.Context, in *GreetingInput) (*GreetingOutput, error) {
+			out := &GreetingOutput{}
+			out.Body.Message = "Hello, " + in.Name + "!"
+
+			return out, nil
+		})
+
+	http.ListenAndServe("127.0.0.1:8888", router)
+}
+
+//END OMIT

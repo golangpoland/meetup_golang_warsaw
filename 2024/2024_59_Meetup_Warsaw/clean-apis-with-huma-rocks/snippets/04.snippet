@@ -1,0 +1,24 @@
+package main
+
+import "time"
+
+// START OMIT
+type MyBody struct {
+	Name string `json:"name"`
+}
+
+type MyInput struct {
+	ID      string `path:"id"`
+	Detail  bool   `query:"detail" doc:"Show full details"`
+	Auth    string `header:"Authorization"`
+	Body    MyBody
+	RawBody []byte
+}
+
+type MyOutput struct {
+	ContentType  string    `header:"Content-Type"`
+	LastModified time.Time `header:"Last-Modified"`
+	MyHeader     int       `header:"My-Header"`
+	Body         MyBody
+}
+// END OMIT

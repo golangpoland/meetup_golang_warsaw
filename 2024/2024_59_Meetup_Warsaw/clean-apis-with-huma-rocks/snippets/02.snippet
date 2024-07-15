@@ -1,0 +1,18 @@
+package main
+
+import (
+	_ "github.com/danielgtaylor/huma/v2/formats/cbor"
+)
+
+// START OMIT
+type GreetingInput struct {
+	Name string `path:"name" maxLength:"30" example:"John" doc:"Name to greet"`
+}
+
+type GreetingOutput struct {
+	Body struct {
+		Message string `json:"message" example:"Hello, world!" doc:"Greeting message"`
+	}
+}
+
+// END OMIT

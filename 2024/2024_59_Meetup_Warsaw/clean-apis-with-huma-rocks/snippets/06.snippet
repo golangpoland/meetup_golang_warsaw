@@ -1,0 +1,19 @@
+HTTP/2.0 422 Unprocessable Entity
+Cache-Control: private
+Content-Length: 241
+Content-Type: application/problem+json
+Link: </schemas/ErrorModel.json>; rel="describedBy"
+
+{
+    "$schema": "https://api.rest.sh/schemas/ErrorModel.json",
+    "status": 422,
+    "title": "Unprocessable Entity",
+    "detail": "validation failed",
+    "errors": [
+        {
+        "location": "body.title",
+        "message": "expected string",
+        "value": true
+        }
+    ]
+}
