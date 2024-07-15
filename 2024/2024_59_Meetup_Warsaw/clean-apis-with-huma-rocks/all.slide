@@ -1,0 +1,81 @@
+Clean APIs with Huma Rocks!
+10 July 2024
+Tags: oss, apis, go
+
+Lukasz Gut
+Senior Software Engineer, Grafana Labs
+lukasz@lukaszgut.com
+
+* APIs are eating the world
+
+- APIs becoming products
+- Engineering teams are moving towards API-First development
+- The standard `http` package is good for small projects, clunky for real-world stuff
+
+
+* Why Huma?
+
+- Built with idiomatic Go conventions in mind
+- Works with `http.ServerMux`, `chi`, `gin`, `Fiber`, and more
+- First-class support for open industry standards: _OpenAPI_, _JSON_Schema_
+
+Note: I'm not affiliated with the Huma project whatsoever. I use it in production.
+
+
+* Getting Started
+
+.code snippets/01.snippet
+.code snippets/02.snippet /START OMIT/,/END OMIT/
+
+
+* Getting Started
+
+.code snippets/03.snippet /START OMIT/,/END OMIT/
+
+
+* Inputs & Outputs
+
+Inputs and Outputes use standard Go structs with special fields and/or tags.
+
+.code snippets/04.snippet /START OMIT/,/END OMIT/
+
+
+* Validation
+
+Go struct tags are used to annotate inputs/output structs with information that gets turned into JSON Schema for documentation and validation.
+
+.code snippets/05.snippet /START OMIT/,/END OMIT/
+
+
+* Errors
+
+Errors use RFC 9457 Problem Details for HTTP APIs 
+
+.code snippets/06.snippet
+
+
+* Documentation, OpenAPI & JSON Schema
+
+- Interactive documentation available under `/docs`
+- OpenAPI 3.0 and 3.1 available under `/openapi.json`, `/openapi.yaml`, `/openapi-3.0.json`, and `/openapi-3.0.yaml`
+- Every response gets a `$schema` field with a URL to JSON Schema
+
+
+* Demo
+
+
+* There is more...
+
+- Middleware
+- Custom Validation 
+- Request Resolvers
+- File Uploads
+- Response Streaming
+- SSE
+- Testing Framework
+- Customize Everything: validation, errors, schema, etc.
+
+* Links
+
+.link https://huma.rocks/ Huma Rocks
+.link https://github.com/Blinkuu/talks/tree/main/2024/clean-apis-with-huma-rocks Slides
