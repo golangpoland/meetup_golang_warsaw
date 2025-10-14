@@ -1,0 +1,5 @@
+{{- $test = (list ) -}}
+{{- range $_, $i := untilStep (0|int) (iteration|int) (1|int) -}}
+{{- $test = (mustAppend $test (printf "%d" $i)) -}}
+{{- end -}}
+{{- $result = (mustAppend $result $test) -}}

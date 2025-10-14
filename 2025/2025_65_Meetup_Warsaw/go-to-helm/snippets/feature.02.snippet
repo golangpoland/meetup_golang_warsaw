@@ -1,0 +1,10 @@
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
++      {{- with .Values.topologySpreadConstraints }} // HL
++      topologySpreadConstraints:  // HL
++        {{- toYaml . | nindent 8 }}  // HL
++      {{- end }}  // HL
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}

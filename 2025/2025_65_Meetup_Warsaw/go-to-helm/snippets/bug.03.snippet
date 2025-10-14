@@ -1,0 +1,4 @@
+*/}}
+- {{- if and (include "tls-enabled" . | fromJson).bool ( eq .Values.external.types "NodePort" ) }} // HL
++ {{- if and (include "tls-enabled" . | fromJson).bool ( eq .Values.external.type "NodePort" ) }} // HL
+  {{- $values := .Values }}

@@ -1,0 +1,12 @@
+func pdb() *policyv1.PodDisruptionBudget {
+	minAvail := intstr.FromInt32(3) // HL
+	return &policyv1.PodDisruptionBudget{
+		TypeMeta: metav1.TypeMeta{
+			APIVersion: "policyv1",
+			Kind:       "PodDisruptionBudget",
+		},
+		Spec: policyv1.PodDisruptionBudgetSpec{
+			MinAvailable: &minAvail, // HL
+		},
+	}
+}

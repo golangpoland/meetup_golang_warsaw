@@ -1,0 +1,19 @@
+              ],
+              "properties": {
+                "issuerRef": {
+                  "type": "string" // HL
+                  # helm values defines issuer as object
+                  "type": "object",
+                  "additionalProperties": false,
+                  "properties": {
+                    "kind": {
+                      "type": "string",
+                      "enum": ["ClusterIssuer", "Issuer"]
+                    },
+                    "name": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "caEnabled": {
+                  "type": "boolean"

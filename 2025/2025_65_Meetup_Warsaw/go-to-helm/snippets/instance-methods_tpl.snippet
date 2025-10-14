@@ -1,0 +1,8 @@
+{{- define "syntax.TestStruct.Multiplayer" -}}
+{{- $ts := (index .a 0) -}} // HL
+{{- $input := (index .a 1) -}}
+{{- range $_ := (list 1) -}}
+{{- (dict "r" ((mul $input ($ts.Mult | int)) | int)) | toJson -}} // HL
+{{- break -}}
+{{- end -}}
+{{- end -}}

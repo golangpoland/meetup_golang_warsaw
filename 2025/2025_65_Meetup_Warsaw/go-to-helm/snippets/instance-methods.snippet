@@ -1,0 +1,12 @@
+type TestStruct struct {
+	TestBoolean bool
+	Mult        int
+}
+
+func (ts *TestStruct) Double(input int) int {
+	return input * 2
+}
+
+func (ts *TestStruct) Multiplayer(input int) int {  // HL
+	return input * ts.Mult  // HL
+}  // HL

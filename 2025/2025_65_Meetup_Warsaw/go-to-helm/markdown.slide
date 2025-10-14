@@ -1,0 +1,246 @@
+# How Go template can be managed in Helm hell 🔥
+Tags: oss, helm, go
+Summary: Using Go parser to generate valid Go template to ease maintenance of Helm charts.
+
+14 October 2025
+
+Rafał Korepta
+
+Software Engineer, Redpanda Data
+rafal.korepta@gmail.com
+https://github.com/RafalKorepta
+
+## Shout out!
+
+Chris Seto
+
+His great ideas were instrumental in bringing GoToHelm to life.
+
+[https://github.com/chrisseto](https://github.com/chrisseto)
+
+## A bit of history
+
+Small group of 3 had ambition to build Redpanda cloud.
+
+: Alena, Dimitrios and I build first version of Redpanda Operator that could bootstrap Redpanda cluster
+: - Build on top of standard Kubernetes Resources
+: - One Kubernetes cluster per Redpanda cluster, as Seastar "owns" the machine it runs on
+: - Adopt nodeJS to be able to orchestrate Redpanda custom resource in multiple K8S clusters
+: - Adopt Temporal workflows and activities for orchestration within Redpanda cloud
+: - Monitoring, Security, Auditability all good stuff
+
+## Writes on disk performance degradation
+
+Redpanda provides 2 sources of data: local disk and S3 equivalent storage.
+
+: There wasn't any prioritization of fetching "Tiered" storage to local disk for serving data vs standard write path.
+:  __
+
+Everything would be fine expect that standard StatefulSet is not that flexible. If you curious:
+- rolling upgrade with onDelete upgrade strategy and StatefulSet orphan delete propagation [PR-2728](https://github.com/redpanda-data/redpanda/pull/2728)
+
+: Problem: StatefulSet controller can not modify the PersistentVolumeClaim template during the cluster lifecycle.
+: Solution: Set the update strategy to the Statefulset to `onDelete` to control when Pods are updated from operator perspective. Delete StatefulSet resource and orphan its Pods, so they can be safely re-adopted during a controlled rolling upgrade.
+:  __
+
+- cluster health during rolling update [PR-7528](https://github.com/redpanda-data/redpanda/pull/7528)
+
+: Problem: Redpanda at that time didn't provide single HTTP endpoint to validate if the cluster is healthy and ready for rolling upgrade
+: Solution: Thanks to controlled rolling update strategy, cluster health check could be added easily to the reconcile logic
+:  __
+
+- gives Redpanda more time than terminationGracePeriod [PR-7530](https://github.com/redpanda-data/redpanda/pull/7530)
+
+: Problem: Redpanda might not flush everything within terminationGracePeriod along with closing client connection and move leaders to other nodes.
+: Solution: Maintenance mode needs to be controlled from the Operator and sometimes it needs to stop the whole rolling upgrade/restart process.
+
+- in node pool migration gives time to catch up for new Redpanda nodes that has clean state [PR-7594](https://github.com/redpanda-data/redpanda/pull/7594)
+
+## Helm enters the salon
+
+Goal 60 seconds to effect WoW
+
+.image images/sad-frog.jpeg 400 400
+
+: Time fly by and around 2 year later Redpanda start to chase goal of 60 seconds to effect Wow
+: Helm is the chosen to provide simple one line command for end user to bootstrap local environment
+: The Redpanda Operator is used only in Redpanda Cloud. It is discouraged in self-managed deployments due to its high complexity.
+
+## Maintenance problems
+
+.code snippets/bug.01.snippet
+
+## Unused code in test
+
+.code snippets/bug.02.snippet
+
+[PR-215](https://github.com/redpanda-data/helm-charts/pull/215/files#diff-6f494fcb2c4edfa7256b33ba89ef8e7c83d92c7f0a6bf6bea53341881e224620R52)
+
+: Part of template that is not tested, as values are empty, blows during end user execution
+
+## Duplicated fields
+
+Contributor duplicated securityContext in Job definition which causes kustomize to fail
+
+    kustomize build app --enable-helm
+    Error: map[string]interface {}(nil): yaml: unmarshal errors:
+    line 62: mapping key "securityContext" already defined at line 27
+    error: no objects passed to apply
+
+[PR-368](https://github.com/redpanda-data/helm-charts/pull/368/files#diff-0d30198b58649d96786d4b544c8d7c211ebfc5ab6ebbe3b64007d10afd709d0fR162-R163)
+
+[PR-392](https://github.com/redpanda-data/helm-charts/pull/392/files#diff-0d30198b58649d96786d4b544c8d7c211ebfc5ab6ebbe3b64007d10afd709d0fL162)
+
+## Lack of build in mechanism to flag values typos
+
+.code snippets/bug.03.snippet
+
+[PR-578](https://github.com/redpanda-data/helm-charts/pull/578/files?diff=split&w=0#diff-53524373b567938b006342d8b59327da145d204f517d835406228ab19bb7e114R17)
+
+## Trim trailing white space
+
+.code snippets/bug.04.previous.snippet
+.code snippets/bug.04.new.snippet
+
+[PR-295](https://github.com/redpanda-data/helm-charts/pull/295/files?diff=split&w=0#diff-8407f32f870c88088a3041f8a5a8394806973dabdef154b7fde83d5e77f70ed8R28-R34)
+
+## Trimming cont
+
+.code snippets/bug.05.snippet
+
+[PR-830](https://github.com/redpanda-data/helm-charts/pull/830/files?diff=split&w=0#diff-7752828706c8d704a7fadc16ea9c463b367e795d355d8d14aa7c433b4550464cR84)
+
+## Templating when rendering
+
+A hack that satisfies the Redpanda Helm chart schema, as string provided in helm values, is templated into text that matches the Kubernetes core object schema.
+
+.code snippets/feature.01.snippet
+
+[PR-257](https://github.com/redpanda-data/helm-charts/pull/257/files#diff-eb130829b6e2dc9eaf2926c9be3098284bfc7d9659f461aaea65a76fd8d12b4dR1-R12)
+
+## Lack of generic overwrite mechanism (like kustomize)
+
+.code snippets/feature.02.snippet
+
+[PR-493](https://github.com/redpanda-data/helm-charts/pull/493/files#diff-54bfc34282c86ee4d24517c4b92d3fa12800d27cacf85dfb5a3391ae309eb0e6R260-R263) - TopologySpreadConstraints in Deployment
+
+[PR-570](https://github.com/redpanda-data/helm-charts/pull/570/files#diff-6f494fcb2c4edfa7256b33ba89ef8e7c83d92c7f0a6bf6bea53341881e224620R339-R341) - SecurityContext in StatefulSet Pod Template
+
+[PR-645](https://github.com/redpanda-data/helm-charts/pull/645) - extra volumeMounts, volumes and init Containers
+
+[PR-715](https://github.com/redpanda-data/helm-charts/pull/715/files#diff-0d30198b58649d96786d4b544c8d7c211ebfc5ab6ebbe3b64007d10afd709d0fR61-R63) - Affinity in Jobs
+
+: There were a number of times when fields were added. It was hard to maintain consistent approach for values and its schema
+
+## Gotohelm
+
+## All Kubernetes core resources transpiled to helm (go) template
+
+Thanks to Chris idea `gotohelm` parses go code where a collection of AST rewrites are performed to convert various
+bits of go syntax into (mostly) equivalent but more easily transpilable syntax. Then transpilable AST tree is converted to
+go template code.
+
+[Visit gotohelm README](https://github.com/redpanda-data/redpanda-operator/blob/main/gotohelm/README.md)
+
+## PDB
+
+.code snippets/pdb.go.snippet
+
+.code snippets/pdb.transpiled.snippet
+
+## PDB focused cont
+
+.code snippets/pdb.focused.snippet
+
+## Loops
+
+.code snippets/loop.snippet
+
+.code snippets/loop_tpl.snippet
+
+[PR-1305](https://github.com/redpanda-data/helm-charts/pull/1305)
+
+## Instance methods
+
+.code snippets/instance-methods.snippet
+
+.code snippets/instance-methods_tpl.snippet
+
+[PR-1342](https://github.com/redpanda-data/helm-charts/pull/1342)
+
+## Transpiled functions call
+
+Transpiled go functions can be invoked within existing templates using the
+following syntax:
+
+: Functions are "implemented" by abusing the `include` builtin and are turned
+: into `define` blocks. Return values are wrapped in a dictionary and marshalled
+: to JSON. (Almost like Internet Explorer circa 2011).
+
+    (include NAME ARGS...) | fromJson | get RETURNKEY
+
+## Transpiled function call cont
+
+    ((include NAMESPACE.NAME (dict "a" (list ARGS...))) | fromJson | get "r")
+
+: NAMESPACE is the go package
+: NAME can be concatenation of Struct name and method name or just function name
+: Arguments are always passed in dictionary that has single "a" key
+: Function always returns json string that is an object with single field "r"
+
+## Multiple return values
+
+Anything that returns multiple values is rewritten.
+
+    value, ok := dict[key]
+
+Becomes
+
+    tmp_tuple_1 := helmette.DictTest(dict, key)
+    value := tmp_tuple_1.T1
+    ok := tmp_tuple_1.T2
+
+## Helm dependency transpilation
+
+Like in go import where the functions defined in other dependency (subcharts) can be used in main chart
+
+## Sprig functions
+
+With few exception directives defined in functions give the same outcome in helm template and go code
+
+        // +gotohelm:builtin=BUILTIN_FUNC
+
+## Overwrite everything
+
+Our recommendation, how StatefulSet should be configured, might not work in customer environment
+
+Simple [merge function](https://helm.sh/docs/chart_template_guide/function_list/#merge-mustmerge) does not merge correctly on slice e.g. Containers or InitContainers
+
+Specialised function ([PR-1608](https://github.com/redpanda-data/helm-charts/pull/1608)) where created for slices of the above types. These were then transpiled into template files to produce the same outcome in Go and Helm template.
+
+: As we can not predict what user would like to set and change to meet their requirements, we need to give ability to overwrite any field in PodTemplate
+
+## Values Schema
+
+We had a dream to not write any helm chart schema by hand. We made it! 🕺
+
+We used [github.com/invopop/jsonschema](github.com/invopop/jsonschema).
+
+## Schema created by hand
+
+.code snippets/schema.01.snippet
+
+[PR-217](https://github.com/redpanda-data/helm-charts/pull/217/files#diff-7573c8e3ada7cb2fe4a9a6b40e135a1d5568a9d128d15a57b124d32568126819L137-R147) - issuerRef didn't use hack with string transpiled using tpl function
+
+[PR-816](https://github.com/redpanda-data/helm-charts/pull/816/files) - schema changes weren’t caught during the PR review ¯\\\_(ツ)_/¯
+
+## Connect everything together
+
+[Render function](https://github.com/redpanda-data/redpanda-operator/blob/d831918b5aa19a0f5bcee73fad0cd778247c2863/charts/redpanda/chart.go#L84-L114) is an entry point for any helm chart.
+
+In helm template we call render function in [entry-point.tpl](https://github.com/redpanda-data/redpanda-operator/blob/d831918b5aa19a0f5bcee73fad0cd778247c2863/charts/redpanda/chart/templates/entry-point.yaml#L17C1-L17C68)
+as follows:
+
+    {{- include "_shims.render-manifest" (list "redpanda.render" .) -}}
+
+: That way we can use the same code for helm base deployment and Redpanda Operator reconciliation

@@ -1,0 +1,4 @@
+- {{- end }}
+- {{- if not ( empty .Values.statefulset.podAntiAffinity ) -}} // HL
++ {{- end -}}
++ {{- if not ( empty .Values.statefulset.podAntiAffinity ) }} // HL

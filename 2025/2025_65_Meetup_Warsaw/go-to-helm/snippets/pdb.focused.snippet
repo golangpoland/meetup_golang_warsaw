@@ -1,0 +1,21 @@
+{{- (dict "r" (mustMergeOverwrite (dict
+    "metadata" (dict "creationTimestamp" (coalesce nil))
+    "spec" (dict)
+    "status" (dict
+            "disruptionsAllowed" 0
+            "currentHealthy" 0
+            "desiredHealthy" 0
+            "expectedPods" 0
+)) (mustMergeOverwrite
+    (dict)
+    (dict
+        "apiVersion" "policyv1"
+        "kind" "PodDisruptionBudget"
+    )
+)
+(dict
+    "spec"
+        (mustMergeOverwrite
+            (dict)
+            (dict "minAvailable" $minAvail) // HL
+)))) | toJson -}}
