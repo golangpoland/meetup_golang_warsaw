@@ -11,7 +11,7 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 
 Talks:
 
-1. TODO
+1. [Swiss Map](./2026/2026_67_Meetup_Warsaw/swiss-map.pdf) - Vladimir Saraikin
 2. Embedded Postgres in Go - Oleg Kovalov [slides](https://speakerdeck.com/olegkovalov/embedded-postgres-in-go)
 3. TODO
 
