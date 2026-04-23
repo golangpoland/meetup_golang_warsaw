@@ -7,6 +7,14 @@ Want to be a speaker? Have an idea for building our community? Let us know! Chec
 <img src=".organizers/logo/gofersyrenka.png" alt="gofersyrenka" width="150p"/><br />
 <small>Logo by <i>mlemkat</i></small>
 
+## Golang Warsaw #67 (Apr 15, 2026)
+
+Talks:
+
+1. TODO
+2. Embedded Postgres in Go - Oleg Kovalov [slides](https://speakerdeck.com/olegkovalov/embedded-postgres-in-go)
+3. TODO
+
 ## Golang Warsaw #64 (Aug 7, 2025)
 
 Talks:
